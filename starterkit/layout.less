@@ -36,7 +36,7 @@
   .twocolumn .en_left_wrapper {
     float: right;
     clear: right;
-    width: 100 - @sidebar-second-width - 4;
+    width: 52%;
   }
 
   .twocolumn .en_right_wrapper {
@@ -45,6 +45,12 @@
     width: @sidebar-second-width;
     min-width: 370px;
   }
+}
+
+@media @huge {
+  .twocolumn .en_left_wrapper {
+    width: 34%;
+  }  
 }
 
 

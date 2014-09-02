@@ -165,6 +165,8 @@ h6 {
     width: 107%;
     position: relative;
     left: -3%;
+    background: url('./images/striped.png') no-repeat bottom left transparent;
+    padding-bottom: 25px;
     
     img {
       width: 200%;
@@ -247,6 +249,7 @@ h6 {
     top: 0;
     bottom: 0;
     padding-right: 70px;
+    max-width: 550px;
     
     input[type="submit"], input[type="button"], input[type="reset"], a.button, .button  {
       margin: 0 auto @oneline;
@@ -286,12 +289,44 @@ br[clear="all"] {
   display: none;
 }
 
+/* left column */
+
+@media @desktop {
+  
+  .en_left_wrapper {
+    padding-right: 6%;
+    padding-left: 40%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding-top: @oneline*2;
+    color: @mywhite;
+    background: url('./images/pink_bg.png') repeat top left transparent;
+    
+    h1, h2, h3, h4, h5, a, a:link, a:hover, a.focus, a.visited {
+      color: @mywhite;
+    }
+    
+    h1 {
+      border-bottom: 0px solid transparent;
+      text-align: left;
+    }
+  }
+}
+
+@media @huge {
+  .en_left_wrapper {
+    padding-right: 24%;
+  }
+}
+
 /* ---------- buttons ----------------------------------------------- */
 
 input[type="submit"], input[type="button"], input[type="reset"], a.button, .button  {
   background: @button_bg repeat;
   font-size: 150%;
-  font-weight: bold;
+  font-weight: normal;
   font-family: @fancyserif;
   display: block;
   padding: .9em 1.5em .85em;
