@@ -78,14 +78,15 @@ a:active {
 /* ---------- headings ---------------------------------------------- */
 
 h1 {
-  .f(24);
+  .f(30);
   color: @heading_color;
   font-family: @fancyserifb;
   font-weight: normal;
   font-style: normal;
   text-decoration: none;
   word-wrap: break-word;
-  border-bottom: 6px solid @heading_color;
+  border-bottom: 4px solid @heading_color;
+  text-align: center;
 
   .en_right_wrapper & {
     color: @heading_second_color;
@@ -156,34 +157,62 @@ h6 {
 /* ---------- main -------------------------------------------------- */
 
 #main {
+  padding-top: @oneline;
+
   .background {
     overflow: hidden;
+    margin-bottom: @oneline*2;
+    width: 107%;
+    position: relative;
+    left: -3%;
+    
     img {
-      width: 150%;
+      width: 200%;
+      max-width: none;
       height: auto;
       display: block;
+      margin-left: -38%;
     }
   }
 }
 
 @media @tablet {
   #main {
-  width: 100%;
+    padding-top: @oneline*2;
+  }
+}
+
+
+@media @desktop {
+  #main {
+  width: 90%;
   max-width: 100%;
   padding-right: 0;
+  padding-top: 0;
     .background {
+      margin-bottom: 0;
       z-index: -1;
       position: fixed;
       top: 0px;
       right: 0px;
+      left: inherit;
       width: 72%;
 
       img {
         width: 100%;
         height: auto;
         display: block;
+        margin-left: 0;
       }
     }
+  }
+}
+
+@media @desktop {
+  #main {
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
   }
 }
 
@@ -201,25 +230,32 @@ h6 {
 
 /* right column*/
 
-.en_right_wrapper { /* sides switched here */
-  background: url('./images/torn_right.png') repeat-y top right transparent;
-  padding-left: 1.5em;
-  padding-right: 1.5em;
-  padding-top: @oneline*2;
-  .boxsizing(border-box);
-  height: 100%;
-  position: relative;
-  top: 0;
-  bottom: 0;
-  padding-right: 70px;
-  
-  input[type="submit"], input[type="button"], input[type="reset"], a.button, .button  {
-    margin: 0 auto @oneline;
-  }
+.en_right_wrapper {
+  background-color: @form_bg_color;
+  padding: @oneline 5% @oneline*2;
 }
 
-.en_right_wrapper > div {
-  background-color: @form_bg_color;
+@media @desktop {
+  .en_right_wrapper { /* sides switched here */
+    background: url('./images/torn_right.png') repeat-y top right transparent;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    padding-top: @oneline*2;
+    .boxsizing(border-box);
+    height: 100%;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    padding-right: 70px;
+    
+    input[type="submit"], input[type="button"], input[type="reset"], a.button, .button  {
+      margin: 0 auto @oneline;
+    }
+  }
+
+  .en_right_wrapper > div {
+    background-color: @form_bg_color;
+  }
 }
 
 .eaRightColumnContent {
