@@ -254,11 +254,11 @@ br[clear="all"] {
 
 input[type="submit"], input[type="button"], input[type="reset"], a.button, .button  {
   background: @button_bg repeat;
-  font-size: 120%;
+  font-size: 150%;
   font-weight: bold;
   font-family: @fancyserif;
   display: block;
-  padding: .5em 1.5em .45em;
+  padding: .9em 1.5em .85em;
   color: @mywhite;
   text-decoration: none;
   display: block;
@@ -290,13 +290,13 @@ input.eaResetButton, .eaResetButton {
 /* ---------- text input -------------------------------------------- */
 
 input[type="text"], input[type="email"], input[type="number"], input[type="password"], textarea, select, .selecter .selecter-selected {
-  font-size: 120%;
-  background-color: @mywhite;
+  font-size: 125%;
+  background-color: darken(@mywhite,7%);
   border: 1px solid @form_border_color;
   font-family: @fancyserif;
   font-weight: normal;
   color: @fmain;
-  padding: .5em;
+  padding: .6em;
   width: 100%;
   .boxsizing(border-box);
 }
@@ -306,6 +306,7 @@ select:focus, textarea:focus {
   background: @mywhite none;
   border: 1px solid darken(@form_border_color, 5%);
   color: @fmain;
+  .boxshadow(0px, 0px, 4px, #fff);
 }
 
 /* ---------- checkbox & radio -------------------------------------- */

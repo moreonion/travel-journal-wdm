@@ -3122,10 +3122,10 @@ input[type="reset"],
 a.button,
 .button {
   background: #b83d65 repeat;
-  font-size: 120%;
+  font-size: 150%;
   font-weight: bold;
   font-family: 'AmericanTypwrterITCW01- 731031', Georgia, Times, "Times New Roman", serif;
-  padding: .5em 1.5em .45em;
+  padding: .9em 1.5em .85em;
   color: #f9f7f2;
   text-decoration: none;
   display: block;
@@ -3176,13 +3176,13 @@ input[type="password"],
 textarea,
 select,
 .selecter .selecter-selected {
-  font-size: 120%;
-  background-color: #f9f7f2;
-  border: 1px solid #e1d7be;
+  font-size: 125%;
+  background-color: #eee8da;
+  border: 1px solid #d9ccac;
   font-family: 'AmericanTypwrterITCW01- 731031', Georgia, Times, "Times New Roman", serif;
   font-weight: normal;
   color: #1d1d19;
-  padding: .5em;
+  padding: .6em;
   width: 100%;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -3195,8 +3195,11 @@ input[type="password"]:focus,
 select:focus,
 textarea:focus {
   background: #f9f7f2 none;
-  border: 1px solid #d9ccac;
+  border: 1px solid #d1c19b;
   color: #1d1d19;
+  -webkit-box-shadow: 0px 0px 4px #ffffff;
+  -moz-box-shadow: 0px 0px 4px #ffffff;
+  box-shadow: 0px 0px 4px #ffffff;
 }
 /* ---------- checkbox & radio -------------------------------------- */
 input[type="checkbox"] {
@@ -3290,7 +3293,7 @@ label,
   text-align: center;
   padding: 10px 0px;
   background-color: #ffffff;
-  border: 1px solid #e1d7be;
+  border: 1px solid #d9ccac;
   -webkit-border-radius: 10px;
   -khtml-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -3484,7 +3487,7 @@ label,
   margin-bottom: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
-  border: 1px solid #e1d7be;
+  border: 1px solid #d9ccac;
   background-color: #fff;
 }
 /* container for a contact's detail */
