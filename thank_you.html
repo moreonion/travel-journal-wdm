@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="../lib/jquery.fs.selecter.css" rel="stylesheet" type="text/css">
+<link href="../lib/jquery.fs.picker.css" rel="stylesheet" type="text/css">
+<link href="fonts.css" rel="stylesheet" type="text/css">
+<link href="theme.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript" src="../lib/respond.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="http://services.postcodeanywhere.co.uk/css/captureplus-2.10.min.css?key=px33-ua49-bh39-mh12" />
+<script type="text/javascript" src="http://services.postcodeanywhere.co.uk/js/captureplus-2.10.min.js?key=px33-ua49-bh39-mh12"></script>
+
+</head>
+
+<body>
+  <div id="page">
+    <div id="header">
+
+    </div>
+    <div id="main" class="middle">
+
+<!-- ################################################################### -->
+<!-- ############# end of template header ############################## -->
+<!-- ################################################################### -->
+
+<script type='text/javascript' src='https://www.google.com/jsapi'></script>
+<script type='text/javascript'>google.load('jquery', '1.7.1');</script>
+<script type='text/javascript' >var CONTEXT_ROOT = '/ea-action';</script>
+<script type='text/javascript' src='/ea-action/js/eaCommon.js'></script>
+<script type='text/javascript' src='/ea-action/js/eaAJAX.js'></script>
+<script type='text/javascript' src='/ea-action/js/eacampaign.js'></script>
+
+<script type='text/javascript' src='/ea-action/js/typeahead.js'></script>
+
+
+<form method='POST' name='Hear my voice_Form_May launch_2' id='ea6731id' class='eaform ea6731class' action='/ea-action/action' onsubmit='return validateEAform(this, false)'>
+<input type='hidden' name='ea_requested_action' value='ea_submit_user_form' />
+<input type='hidden' name='ea_javascript_enabled' id='ea_javascript_enabled' value='false' />
+<input type='hidden' name='ea.AJAX.submit' value='false' />
+<input type='hidden' name='ea.client.id' value='78' />
+<input type='hidden' name='ea.campaign.id' value='28674' />
+<input type='hidden' name='ea.form.id' value='6731' />
+<input type='hidden' name='ea.submitted.page' value='2' />
+<input type='hidden' name='sessionId' value='d7835a77-ac49-423c-bd8c-200db1edc48b' />
+<div id='eaerrors' class='eaErrorMessage'>
+</div>
+
+<div id='Hear_my_voice_image_Sara_happyDiv' class='eaLeftColumnContent'><div class="background"><img src="//www.e-activist.com/ea-campaign/action.retrievefile.do?ea.client.id=78&amp;ea_filename=Sara happy_compressed.jpg" border="0" alt="Sara looks happy" title="Sara looks happy" width="683" height="1024" /></div></div><div id='TEMPLATE_THANK_YOU_PAGEDiv' class='eaRightColumnContent'><h1>Thank you!</h1>
+<p>Thank you for taking part in this action. We will keep you updated on the progress of the campaign.</p>
+<p>Please encourage your friends to support this campaign as well.&nbsp;</p></div>
+<div class='eaLeftColumnFiller'>&nbsp;</div><div id='Hear_my_voice_Thank_you_page_May_launch_Div' class='eaRightColumnContent'><iframe title='Hear my voice_May data capture_Display widget' src='http://e-activist.com/ea-action/displaywidget?widgetId=888' frameborder='0' width='300' height='175' scrolling='no'></iframe><br /><br />
+<h2>With your help, we can see that number rocket!&nbsp; Please encourage others to join their voices
+to the campaign as well.&nbsp; The more people
+that join, the louder our voice will be.</h2>
+<p><div class="en_social_buttons horizontal">
+<div class="en_twitter simple">
+<a href=" https://twitter.com/intent/tweet?text=&url=http%3A%2F%2Fe-activist.com%2Fea-action%2Faction%3Fea.client.id%3D78%26ea.campaign.id%3D28674%26en_chan%3Dtw%26en_ref%3D42647873"><img src="/ea-action/images/icon-twitter.gif" width="60" height="24" alt="Share via Twitter" border="0" /></a>
+</div>
+<div class="en_facebook simple">
+<a href="https://www.facebook.com/sharer.php?u=http%3A%2F%2Fe-activist.com%2Fea-action%2Faction%3Fea.client.id%3D78%26ea.campaign.id%3D28674%26en_chan%3Dfb%26en_ref%3D42647873%26ea.campaign.mode%3DDEMO"><img src="/ea-action/images/icon-facebook.gif" width="60" height="24" alt="Share on Facebook" border="0" /></a>
+</div>
+</div></p></div><span class="eaSubmitResetButtonGroup" id="eaFormButtonGroup_2"></span>
+</form>
+
+<!-- ################################################################### -->
+<!-- ############# start of template footer ############################ -->
+<!-- ################################################################### -->
+
+      </div> <!-- main -->
+    <div id="footer">
+
+    </div>
+  </div><!-- page -->
+
+  <script src="http://www.e-activist.com/ea-campaign/action.retrievefile.do?ea_fileid=42360"></script>
+
+  <script type="text/javascript" src="../lib/jquery.fs.selecter.js"></script>
+  <script type="text/javascript" src="../lib/jquery.fs.picker.js"></script>
+
+  <script>
+    $(window).load(function(){
+      // two column layout
+      sortTwoColumn();
+      $('.eaSubmitResetButtonGroup').appendTo($('.en_right_wrapper').last());
+      $('body').addClass('twocolumn');
+
+      // enable Picker and Selector
+      // see http://www.benplum.com/formstone/
+      if (typeof $.fn.selecter == 'function') {
+        $('select').selecter();
+      }
+      if (typeof $.fn.picker == 'function') {
+        $('input[type=radio], input[type=checkbox]').picker();
+      }
+
+      // move validation icon next to label
+      // and the error message below the label
+      $('.eaErrorMessage').each(function() {
+        var self = $(this);
+        var label = self.siblings('.eaFormElementLabel');
+        var field = self.siblings('.eaFormField');
+        var icon = $('.eaValidationIcon', label.parent());
+        icon.appendTo(label);
+        self.appendTo(field);
+      });
+
+      // add class to field, where error occured
+      $(window).on('DOMSubtreeModified', '.eaErrorMessage', function(e) {
+        var self = $(e.target);
+  if (!self.is(':empty')) {
+          self.parent().addClass('validationError');
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
+

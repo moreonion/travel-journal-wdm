@@ -1,0 +1,56 @@
+<!-- ################################################################### -->
+<!-- ############# start of template footer ############################ -->
+<!-- ################################################################### -->
+
+      </div> <!-- main -->
+    <div id="footer">
+
+    </div>
+  </div><!-- page -->
+
+  <!-- build:js:dist todo.min.js -->
+  <script type="text/javascript" src="../../lib/ea-column-sort_v1.1.js"></script>
+  <script type="text/javascript" src="../../lib/jquery.fs.selecter.js"></script>
+  <script type="text/javascript" src="../../lib/jquery.fs.picker.js"></script>
+  <!-- /build -->
+
+  <script>
+    $(window).load(function(){
+      // two column layout
+      sortTwoColumn();
+      $('.eaSubmitResetButtonGroup').appendTo($('.en_right_wrapper').last());
+      $('body').addClass('twocolumn');
+
+      // enable Picker and Selector
+      // see http://www.benplum.com/formstone/
+      if (typeof $.fn.selecter == 'function') {
+        $('select').selecter();
+      }
+      if (typeof $.fn.picker == 'function') {
+        $('input[type=radio], input[type=checkbox]').picker();
+      }
+     
+      // move validation icon next to label
+      // and the error message below the label
+      $('.eaErrorMessage').each(function() {
+        var self = $(this);
+        var label = self.siblings('.eaFormElementLabel');
+        var field = self.siblings('.eaFormField');
+        var icon = $('.eaValidationIcon', label.parent());
+        icon.appendTo(label);
+        self.appendTo(field);
+      });
+
+      // add class to field, where error occured
+      $(window).on('DOMSubtreeModified', '.eaErrorMessage', function(e) {
+        var self = $(e.target);
+	if (!self.is(':empty')) {
+          self.parent().addClass('validationError');
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
+
