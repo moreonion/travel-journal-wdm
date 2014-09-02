@@ -19,11 +19,12 @@
 /* ---------- generic stuff ----------------------------------------- */
 
 body {
-  background-color: @background;
+  background: @background url('./images/paper_bg.png') top left repeat;
   .f(@basefontsize);
   color: @fmain;
   font-family: @serif;
   font-weight: normal;
+  margin-bottom: 0;
 }
 
 p, ul, ol, li {
@@ -84,6 +85,7 @@ h1 {
   font-style: normal;
   text-decoration: none;
   word-wrap: break-word;
+  border-bottom: 6px solid @heading_color;
 
   .en_right_wrapper & {
     color: @heading_second_color;
@@ -197,16 +199,37 @@ h6 {
 
 /* ---------- general stuff ----------------------------------------- */
 
+/* right column*/
+
 .en_right_wrapper { /* sides switched here */
-  background-color: @form_bg_color;
+  background: url('./images/torn_right.png') repeat-y top right transparent;
   padding-left: 1.5em;
   padding-right: 1.5em;
+  padding-top: @oneline*2;
   .boxsizing(border-box);
+  height: 100%;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  padding-right: 70px;
   
   input[type="submit"], input[type="button"], input[type="reset"], a.button, .button  {
     margin: 0 auto @oneline;
   }
 }
+
+.en_right_wrapper > div {
+  background-color: @form_bg_color;
+}
+
+.eaRightColumnContent {
+  margin-bottom: @oneline/2;
+}
+
+
+/*.en_right_wrapper:after {
+  background: url('./images/torn_right.png') no-repeat top right transparent;
+}*/
 
 .eaFormField {
   position: relative;

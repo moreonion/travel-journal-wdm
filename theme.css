@@ -2831,12 +2831,12 @@ td {
   .twocolumn .en_left_wrapper {
     float: right;
     clear: right;
-    width: 64.667%;
+    width: 62.667%;
   }
   .twocolumn .en_right_wrapper {
     float: left;
     clear: left;
-    width: 31.333%;
+    width: 33.333%;
   }
 }
 /* ==================================================================
@@ -2901,13 +2901,14 @@ td {
  * ================================================================== */
 /* ---------- generic stuff ----------------------------------------- */
 body {
-  background-color: #f9f7f2;
+  background: #f9f7f2 url('./images/paper_bg.png') top left repeat;
   font-size: 1em;
   line-height: 1.5em;
   margin-bottom: 1.5em;
   color: #1d1d19;
   font-family: Georgia, Times, "Times New Roman", serif;
   font-weight: normal;
+  margin-bottom: 0;
 }
 p,
 ul,
@@ -2965,6 +2966,7 @@ h1 {
   font-style: normal;
   text-decoration: none;
   word-wrap: break-word;
+  border-bottom: 6px solid #b83d65;
 }
 .en_right_wrapper h1 {
   color: #b83d65;
@@ -3065,15 +3067,22 @@ h6 {
  * form styling
  * ================================================================== */
 /* ---------- general stuff ----------------------------------------- */
+/* right column*/
 .en_right_wrapper {
   /* sides switched here */
 
-  background-color: #ede6e1;
+  background: url('./images/torn_right.png') repeat-y top right transparent;
   padding-left: 1.5em;
   padding-right: 1.5em;
+  padding-top: 3em;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  height: 100%;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  padding-right: 70px;
 }
 .en_right_wrapper input[type="submit"],
 .en_right_wrapper input[type="button"],
@@ -3082,6 +3091,15 @@ h6 {
 .en_right_wrapper .button {
   margin: 0 auto 1.5em;
 }
+.en_right_wrapper > div {
+  background-color: #f9f7f2;
+}
+.eaRightColumnContent {
+  margin-bottom: 0.75em;
+}
+/*.en_right_wrapper:after {
+  background: url('./images/torn_right.png') no-repeat top right transparent;
+}*/
 .eaFormField {
   position: relative;
 }
@@ -3160,7 +3178,7 @@ select,
 .selecter .selecter-selected {
   font-size: 120%;
   background-color: #f9f7f2;
-  border: 1px solid #d0beb1;
+  border: 1px solid #e1d7be;
   font-family: 'AmericanTypwrterITCW01- 731031', Georgia, Times, "Times New Roman", serif;
   font-weight: normal;
   color: #1d1d19;
@@ -3177,7 +3195,7 @@ input[type="password"]:focus,
 select:focus,
 textarea:focus {
   background: #f9f7f2 none;
-  border: 1px solid #c7b1a1;
+  border: 1px solid #d9ccac;
   color: #1d1d19;
 }
 /* ---------- checkbox & radio -------------------------------------- */
@@ -3272,7 +3290,7 @@ label,
   text-align: center;
   padding: 10px 0px;
   background-color: #ffffff;
-  border: 1px solid #d0beb1;
+  border: 1px solid #e1d7be;
   -webkit-border-radius: 10px;
   -khtml-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -3466,7 +3484,7 @@ label,
   margin-bottom: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
-  border: 1px solid #d0beb1;
+  border: 1px solid #e1d7be;
   background-color: #fff;
 }
 /* container for a contact's detail */
