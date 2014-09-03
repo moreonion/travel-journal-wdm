@@ -3065,6 +3065,12 @@ h6 {
   display: block;
   margin-left: -38%;
 }
+#main #Action_headline_FlorianDiv,
+#main #Action_copy_FlorianDiv {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
 @media screen and (min-width: 520px) {
   #main {
     padding-top: 3em;
@@ -3092,7 +3098,13 @@ h6 {
     display: block;
     margin-left: 0;
   }
+  #main #Action_headline_FlorianDiv,
+  #main #Action_copy_FlorianDiv {
+    max-width: none;
+  }
+  /* end of main */
 }
+/* end of desktop */
 @media screen and (min-width: 900px) {
   #main {
     width: 100%;
