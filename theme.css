@@ -2838,6 +2838,7 @@ td {
     clear: left;
     width: 33.333%;
     min-width: 370px;
+    z-index: 1000;
   }
 }
 @media screen and (min-width: 1600px) {
