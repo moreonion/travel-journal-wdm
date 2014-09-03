@@ -2,7 +2,34 @@ ToDo
 
 JS that toggles background. How to toggle background info?
 
+-------------------------
+
 * JS only applies on >= desktop breakpoint (alles über 900px)
 * JS usees this a tag as tigger: <a href=#Action_headline_FlorianDiv title="Find out more about this campaign">Background info</a>
 * add the class .background-info to the container .en_right_wrapper (this will add the background and the positioning) 
 * JS should add the following markup as first element to the container .en_right_wrapper ---> <a href=#close id="thex" title="Close the background info">Close</a>
+
+
+JS for GA event tracking
+
+---------------------------
+
+I need GA event tracking on the share buttons, just like in the Campaignion GA event tracking module
+
+Share buttons will look like this (wrapped in the container as shown here)
+
+<div class="share_buttons">
+
+  <!-- Facebook -->
+  <script>function fbs_click() {u=location.href;t=document.title;window.open('http://www.facebook.com/sharer.php?u='+encodeURIComponent(u)+'&t='+encodeURIComponent(t),'sharer','toolbar=0,status=0,width=626,height=436');return false;}</script><style> html .fb_share_link { padding:2px 0 0 20px; height:16px; background:url(http://static.ak.facebook.com/images/share/facebook_share_icon.gif?6:26981) no-repeat top left; }</style><a rel="nofollow" href="http://www.facebook.com/share.php?u=<;url>" onclick="return fbs_click()" target="_blank" class="fb_share_link">Share on Facebook</a>
+
+  <!-- Twitter -->
+  <script>function ts_click() {url=location.href;t=document.title;window.open('https://www.twitter.com/share?url='+encodeURIComponent(url)+'&t='+encodeURIComponent(t),'sharer','toolbar=0,status=0,width=626,height=436');return false;}</script><style> html .tw_share_link { padding:2px 0 0 20px; height:16px; background:url(http://static.ak.facebook.com/images/share/facebook_share_icon.gif?6:26981) no-repeat top left; }</style><a rel="nofollow" href="http://www.twitter.com/share?url=<;url>" onclick="return ts_click()" target="_blank" class="tw_share_link">Share on Facebook</a>
+
+  <!-- Email share link -->
+  <a class="email_share_link" href="X" title="Sign up via email">Sign up via Email</a>
+  
+  <!-- Email signup -->
+  <a class="email_signup_link" href="X" title="Sign up via email">Sign up via Email</a>
+  
+</div>
