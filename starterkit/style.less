@@ -232,13 +232,13 @@ h6 {
 
 /* right column*/
 
-.en_right_wrapper {
+.en_left_wrapper {
   background-color: @form_bg_color;
   padding: @oneline 5% @oneline*2;
 }
 
 @media @desktop {
-  .en_right_wrapper { /* sides switched here */
+  .en_left_wrapper { /* sides switched here */
     background: url('./images/torn_right.png') repeat-y top right transparent;
     padding-left: 1.5em;
     padding-right: 1.5em;
@@ -256,7 +256,7 @@ h6 {
     }
   }
 
-  .en_right_wrapper > div {
+  .en_left_wrapper > div {
     background-color: @form_bg_color;
   }
 }
@@ -293,7 +293,7 @@ br[clear="all"] {
 
 @media @desktop {
   
-  .en_left_wrapper  {
+  .en_right_wrapper  {
     padding-right: 6%;
     padding-left: 40%;
     position: absolute;
@@ -320,7 +320,7 @@ br[clear="all"] {
 
 
 @media @huge {
-  .en_left_wrapper {
+  .en_right_wrapper {
     padding-right: 24%;
   }
 }
