@@ -1,0 +1,885 @@
+/* ########## style.less ############################################
+ *
+ * This file is for everything that's REALLY site specific, not
+ * layout specific
+ *
+ * Compile only this file to generate the ccs for the EN template!
+ */
+
+@import "parameters.less";
+@import "boilerplate.less";
+@import "grid.less";
+@import "layout.less";
+
+
+/* ==================================================================
+ * basic html elements styled happily ever after
+ * ================================================================== */
+
+/* ---------- generic stuff ----------------------------------------- */
+
+body {
+  background: @background url('./images/paper_bg.png') top left repeat;
+  .f(@basefontsize);
+  color: @fmain;
+  font-family: @serif;
+  font-weight: normal;
+  margin-bottom: 0;
+}
+
+p, ul, ol, li {
+  margin-bottom: @oneline;
+}
+
+li {
+  list-style-position: inside;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+table,
+td {
+  margin: 0;
+}
+
+.ea-clear {
+  width: 100%;
+  height: 1px;
+  margin: 0 0 -1px 0;
+  clear: both;
+}
+
+/* ---------- links ------------------------------------------------- */
+
+a, a:link, a:visited {
+  color: @link_color;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+  outline: none;
+}
+
+a:hover, a:focus {
+  color: @link_hover_color;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: underline;
+  outline: none;
+}
+
+a:active {
+  color: @link_active_color;
+  outline: none;
+}
+
+/* ---------- headings ---------------------------------------------- */
+
+h1 {
+  .f(35);
+  color: @heading_color;
+  font-family: @fancyserifb;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+  word-wrap: break-word;
+  border-bottom: 6px solid @heading_color;
+  text-align: center;
+
+
+  .en_right_wrapper & {
+    color: @heading_second_color;
+  }
+}
+
+@media @tablet {
+  h1 {
+    .f(45);
+    margin-bottom: 0.533333em/2;
+    padding-bottom: 0.533333em/2;
+    border-bottom: 8px solid @heading_color;
+  }
+}
+
+h2,
+legend {
+  .f(20);
+  color: @heading_color;
+  font-family: @sansb;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+
+  .ea-form-wrapper & {
+    color: @heading_second_color;
+  }
+}
+
+@media @tablet {
+  h2,
+  .ea-heading2,
+  legend {
+    .f(24);
+  }
+}
+
+h3 {
+  .f(18);
+  font-weight: bold;
+  color: @heading_color;
+}
+
+h4 {
+  .f(15);
+  font-weight: bold;
+  color: @heading_second_color;
+}
+
+h5 {
+  .f(15);
+  font-weight: bold;
+  color: @fmain;
+}
+
+h6 {
+  .f(15);
+  font-style: italic;
+  color: @fmain;
+}
+
+
+/* ==================================================================
+ * top to bottom styling
+ * ================================================================== */
+
+/* ---------- header ------------------------------------------------ */
+
+#header {}
+
+/* ---------- main -------------------------------------------------- */
+
+#main {
+  padding-top: @oneline;
+  
+  .background {
+    overflow: hidden;
+    margin-bottom: @oneline*2;
+    width: 107%;
+    position: relative;
+    left: -3%;
+    background: url('https://www.e-activist.com/ea-campaign/action.retrievefile.do?ea_fileid=47464') no-repeat bottom left transparent;
+    padding-bottom: 25px;
+    
+    img {
+      width: 200%;
+      max-width: none;
+      height: auto;
+      display: block;
+      margin-left: -38%;
+    }
+  }
+  
+  #Action_headline_FlorianDiv, #Action_copy_FlorianDiv {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  } 
+}
+
+@media @tablet {
+  #main {
+    padding-top: @oneline*2;
+  }
+}
+
+
+@media @desktop {
+  #main {
+  width: 90%;
+  max-width: 100%;
+  padding-right: 0;
+  padding-top: 0;
+    .background {
+      margin-bottom: 0;
+      z-index: -1;
+      position: fixed;
+      top: 0px;
+      right: 0px;
+      left: inherit;
+      width: 72%;
+
+      img {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin-left: 0;
+      }
+    }
+    
+    #Action_headline_FlorianDiv, #Action_copy_FlorianDiv {
+      max-width: none;
+    }
+  } /* end of main */
+} /* end of desktop */
+
+@media @desktop {
+  #main {
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  }
+}
+
+
+/* ---------- footer ------------------------------------------------ */
+
+#footer {}
+
+
+/* ==================================================================
+ * form styling
+ * ================================================================== */
+
+/* ---------- general stuff ----------------------------------------- */
+
+/* right column*/
+
+.en_left_wrapper {
+  background-color: @form_bg_color;
+  padding: @oneline 5% @oneline*2;
+}
+
+@media @desktop {
+  .en_left_wrapper { /* sides switched here */
+    background: url('https://www.e-activist.com/ea-campaign/action.retrievefile.do?ea_fileid=47463') repeat-y top right transparent;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    padding-top: @oneline*2;
+    .boxsizing(border-box);
+    height: 100%;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    padding-right: 70px;
+    max-width: 550px;
+    
+    input[type="submit"], input[type="button"], input[type="reset"], a.button, .button  {
+      margin: 0 auto @oneline;
+    }
+  }
+
+  .en_left_wrapper > div {
+    background-color: @form_bg_color;
+  }
+}
+
+.eaRightColumnContent {
+  margin-bottom: @oneline/2;
+}
+
+
+/*.en_right_wrapper:after {
+  background: url('./images/torn_right.png') no-repeat top right transparent;
+}*/
+
+.eaFormField {
+  position: relative;
+}
+
+.ea-hidden {
+  display:none;
+
+  .horizontal & {
+    visibility: hidden;
+    display: inline;
+  }
+}
+
+.eaLeftColumnFiller, 
+.eaLabelSpacer, 
+br[clear="all"] {
+  display: none;
+}
+
+/* left column */
+
+@media @desktop {
+  
+  .en_right_wrapper  {
+    padding-right: 6%;
+    padding-left: 40%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding-top: @oneline*2;
+    color: @mywhite;
+    
+    h1, h2, h3, h4, h5, a, a:link, a:hover, a.focus, a.visited {
+      color: @mywhite;
+    }
+    
+    h1 {
+      border-bottom: 0px solid transparent;
+      text-align: left;
+    }    
+  }
+  
+  .background-info { /* if this class appplies background info will show up */
+    background: url('https://www.e-activist.com/ea-campaign/action.retrievefile.do?ea_fileid=47459') repeat top left transparent;
+  }
+  
+  #WDM_background_pic {
+    display: block;
+  }
+  
+  .eaRightColumnContent {
+    display: none;
+  }
+  
+  .background-info .eaRightColumnContent {
+    display: block;
+  }
+}
+
+
+@media @huge {
+  .en_right_wrapper {
+    padding-right: 24%;
+  }
+}
+
+/* trigger background info */
+
+/*.eaLeftColumnContent {
+  display: none;
+}
+
+
+.background-info .eaLeftColumnContent {
+  display: block;
+}*/
+
+/* ---------- buttons ----------------------------------------------- */
+
+input[type="submit"], input[type="button"], input[type="reset"], a.button, .button  {
+  background: @button_bg repeat;
+  font-size: 150%;
+  font-weight: normal;
+  font-family: @fancyserif;
+  display: block;
+  padding: .9em 1.5em .85em;
+  color: @mywhite;
+  text-decoration: none;
+  display: block;
+  width: 95%;
+  max-width: 400px;
+  border: 2px solid darken(@button_bg, 5%);
+  .textshadow(darken(@button_bg, 10%));
+  .rounded(4px);
+}
+
+input[type="submit"]:hover, input[type="button"]:hover, input[type="reset"]:hover, .button:hover, a.button:hover,
+input[type="submit"]:focus, input[type="button"]:focus, input[type="reset"]:focus, .button:focus, a.button:focus,
+.ui-body-o a.button:hover, .ui-body-o a.button:focus {
+  background: repeat @button_bg_hover;
+  border-color: darken(@button_bg_hover, 5%);
+  color: @mywhite;
+}
+
+input[type="submit"]:active, input[type="button"]:active, input[type="reset"]:active, .button:active, a.button:active {
+  background: repeat @button_bg_active;
+  border-color: darken(@button_bg_active, 5%);
+  color: @mywhite;
+}
+
+input.eaResetButton, .eaResetButton {
+  display: none;
+}
+
+/* ---------- text input -------------------------------------------- */
+
+input[type="text"], input[type="email"], input[type="number"], input[type="password"], textarea, select, .selecter .selecter-selected {
+  font-size: 125%;
+  background-color: darken(@mywhite,7%);
+  border: 1px solid @form_border_color;
+  font-family: @fancyserif;
+  font-weight: normal;
+  color: @fmain;
+  padding: .6em;
+  width: 100%;
+  .boxsizing(border-box);
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:focus, 
+select:focus, textarea:focus {
+  background: @mywhite none;
+  border: 1px solid darken(@form_border_color, 5%);
+  color: @fmain;
+  .boxshadow(0px, 0px, 4px, #fff);
+}
+
+/* ---------- checkbox & radio -------------------------------------- */
+
+input[type="checkbox"] {
+  width: auto;
+  margin-right: 5px;
+}
+
+.eaQuestionCheckbox,
+.eaQuestionRadio {
+  input {
+    float: left;
+    margin-right: 5px;
+    height: @oneline;
+  }
+
+  label {
+    margin-left: 24px;
+  }  
+}
+
+.picker {
+  margin-bottom: 0;
+  .picker-label {
+    float: none;
+    display: block;
+    margin-left: 24px; //= 16px picker-handle + 5px margin
+  }
+
+  .picker-handle {
+    background-color: @mywhite;
+  }
+
+  &.picker-radio .picker-flag {
+    background-color: transparent;
+    margin: 4px;
+  }
+  &.picker-radio.checked:hover .picker-flag {
+    background-color: #999999;
+  }
+}
+
+.eaQuestionCheckbox {
+  .picker .picker-handle {
+    margin-top: 1px;
+  }
+}
+
+.eaQuestionRadio {
+  .picker .picker-handle {
+    margin-top: 3px;
+  }
+}
+
+/* ---------- select ------------------------------------------------ */
+
+select {
+  width: 100%;
+}
+
+.eaQuestionSelectFormFieldContainer {
+  position: relative;
+}
+
+.selecter {
+  max-width: 100%;
+  margin-top: 0;
+  .selecter-options, .selecter-item {
+    .boxsizing(border-box);
+  }
+}
+
+/* ---------- label, legend, description --------------------------- */
+
+label,
+.eaFormElementLabel,
+.eaQuestionLabel,
+.picker .picker-label {
+  .f(16);
+  line-height: 1.3em;
+  margin-bottom: 0;
+  color: lighten(@fmain, 20%);
+}
+
+.eaFormElementLabel,
+.eaQuestionLabel,
+.picker .picker-label {
+  display: block;
+}
+
+.eaQuestionLabel {
+  margin-bottom: @oneline/2;
+}
+
+.eaMandatoryFieldMarker {
+  color: @error_color;
+}
+
+/* ---------- loading ----------------------------------------------- */
+
+.ea-loading {
+  position: absolute;
+  width: 30%;
+  top: 200px;
+  left: 35%;
+  z-index: 200;
+  color: @myblack;
+  font-family: @sans;
+  font-style: normal;
+
+  text-align: center;
+  padding: 10px 0px;
+  background-color: #ffffff;
+
+  border: 1px solid @form_border_color;
+  .rounded(10px);
+  .boxshadow(0px, 0px, 10px, #666666);
+}
+
+.ea-loading-spinner {
+  width: 16px;
+  height: 16px;
+  background-image: url(https://e-activist.com/ea-demo/images/loading.gif);
+  margin: 5px auto;
+
+  /* For web browsers that don't support RGBa */
+  background-color: rgb(255, 255, 255);
+  /* RGBa with 0.6 opacity */
+  background-color: rgba(255, 255, 255, 0.90);
+  /* For IE 5.5 - 7*/
+  filter: ~"progid:DXImageTransform.Microsoft.gradient(startColorstr=#99ffffff, endColorstr=#99ffffff)";
+  /* For IE 8*/
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99ffffff, endColorstr=#99ffffff)";     
+}
+
+/* ---------- validation -------------------------------------------- */
+
+
+.eaAjaxErrorMessageContainer {
+  text-align: left;
+  margin-left: 20%;
+  color: @error_color;
+}
+
+.validationError {
+  input[type="text"], input[type="email"], input[type="number"], input[type="password"], textarea, select, .selecter .selecter-selected {
+    border: 3px solid @error_color;
+  }
+}
+
+.eaErrorMessage {
+  color: #fff;
+  background-color: @error_color;
+  font-family: @sansb;
+  font-weight: bold;
+  margin-top: -3px;
+  padding-top: 2px;
+  margin-bottom: 0px;
+  padding-left: 0px;
+  text-align: center;
+  .rounded_multiple(0, 0, 4px, 4px);
+}
+
+.eaFieldErrorHighlightColor {
+  background-color: @error_color;
+  padding: 10px;
+  color: @mywhite;
+  margin-bottom: 10px;
+}
+
+.eaValidationIcon {
+  display: inline;
+  position: relative;
+  padding-left: 5px;
+  *margin-top: -30px;
+  *display: inline-block;
+  *margin-left: 4px;
+}
+
+.eaValidationIconImg {
+  float: right;
+  padding-top: 0px;
+  margin-top: 0px;
+  width: 20px;
+  height: 20px;
+  *float: none;  /* IE7 Fixes */
+  *margin-top: 2px;
+}
+
+.ea-error-block {
+  color: @error_color;
+  margin: 1em 0px;
+  padding: 10px;
+  padding-top: 0;
+  padding-bottom: 0;
+  
+  border: 1px dashed @error_color;
+  .rounded(4px);
+  
+  ul, ol, p {
+    color: @error_color;
+    font-family: @sans;
+    padding: 0;
+    list-style-type: none;
+  }
+}
+
+#eaerrors {
+  display: none;
+}
+
+
+/* ==================================================================
+ * contact lists
+ * ================================================================== */
+
+/* ---------- contact ----------------------------------------------- */
+
+/* select contact instruction text */
+.eaSelectContactInstruction {}
+
+/* container for contacts */
+.eaContactsContainer {
+  float: left; 
+  width: 95%;
+  position: relative; 
+  padding: 10px; 
+  background-color: @mywhite;
+  margin-top: 10px;
+}
+
+/* contact name container */
+.eaContactNameContainer {
+  float: left; 
+  position: relative;
+  clear: left;
+  font-family: @sansb;
+  padding-right: 10px;
+  width: 48%;
+  height: 25px;
+}
+
+/* contact organization container */
+.eaContactOrgContainer {
+  float: left; 
+  width: 48%; 
+  position: relative;
+}
+
+/* contact biographyLink container */
+.eaContactBiographyLinkContainer {
+  float: left;
+  position: relative;
+  font-family: @sansb;
+  height: 25px;
+  padding-top: 4px;
+  width: 125px;
+}
+
+/* contact biography container */
+.eaContactBiographyContainer {
+  float: left; 
+  position: relative;
+  width: 90%;
+  clear: left;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* contact biography list */
+.eaContactBiographyList{
+  float: left; 
+  position: relative;
+  width: 350px;
+  margin-top: 20px;
+}
+
+/* contact biography line container */
+.eaContactBiographyLineContainer{
+  clear: left;
+  padding-left: 0px;
+  padding-bottom: 5px;
+  list-style-type: disc;
+}
+
+.eaContactBiographyPictureContainer {
+  float: left;
+  position: relative;
+  width: 125px;
+}		
+
+/* contact select checkbox */
+.eaContactSelectCheckbox {
+  color: #666666;
+  border-top-style: none;
+  border-right-style: none;
+  border-bottom-style: none;
+  border-left-style: none;
+  margin-right: 5px;
+}
+
+/* ---------- Multiple contact tabbed list--------------------------- */
+
+/* container for a contact */
+.eaContactContainer {
+  float: left;
+  width: 98%; 
+  position: relative; 
+  padding-left: 5px; 
+  margin-bottom: 10px; 
+  padding-top: 10px; 
+  padding-bottom: 10px; 
+  border: 1px solid @form_border_color; 
+  background-color: #fff;
+}
+
+/* container for a contact's detail */
+.eaContactDetailContainer {
+  float: left;
+  width: 98%;
+  position: relative;
+  padding-top: 10px;
+  padding-left: 5px;
+  clear: left;
+  margin-top: 10px;
+}
+
+/* container for a contact's issue comments */
+.eaContactCommentContainer {
+  position: relative;
+  float: left;
+  clear: left;
+  margin-left: 0px;
+  width: 98%;
+  padding-top: 10px;
+  padding-left: 10px;
+  border: 1px solid #bfbfbf;
+  height: 200px;
+  overflow: auto;
+}
+
+/* contact issue status icon container */
+.eaContactIssueStatusContainer {
+  position: relative;
+  float: right;
+  padding-right: 10px;
+}
+
+/* contact party container */
+.eaContactPartyContainer {
+  float: left;
+  clear: both;
+  margin-left: 200px;
+  width: 200px;
+  top: -10px;
+  position: relative;
+  padding-left: 10px;
+}
+
+/* contact position container */
+.eaContactPositionContainer {
+  float: left;
+  width: 50%;
+  position: relative;
+  padding-left: 0px;
+}
+
+.contactTabContent{
+  padding-left: 5px;
+  padding-bottom: 5px;
+  width: 95%;
+}
+
+/* ---------- images ------------------------------------------------ */
+
+.ea-contact-bio-image {
+  float:left;
+  clear:left;
+  margin: 1em 0 0 0;
+}
+
+.ea-issue-response-image {
+  display: block;
+  text-indent: -999px;
+  clear: both;
+  float: right;
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-top: 0.5em;
+
+  &.ea-issue-response-y {
+    background-image: url(//e-activist.com/ea-campaign/images/agree.gif);
+  }
+  &.ea-issue-response-n {
+    background-image: url(//e-activist.com/ea-campaign/images/disagree.gif);
+  }
+  &.ea-issue-response-u {
+    background-image: url(//e-activist.com/ea-campaign/images/undecided.gif);
+  }
+}
+
+
+/* ==================================================================
+ * EN sharing
+ * ================================================================== */
+ 
+.en_social_buttons {
+  clear:both;
+}
+
+.en_facebook,
+.en_twitter,
+.en_google_plusone {
+  display: block;
+  float: left;
+}
+ 
+.en_social_buttons .large {
+  /* height: 100px; */
+}
+
+.en_facebook.large,
+.en_google_plusone.large {
+  padding-left: 20px;
+}
+ 
+.en_google_plusone.small {
+  padding-left: 20px;
+}
+ 
+.en_social_buttons .small {
+  height: 24px;
+}
+
+.en_twitter.small,
+.en_google_plusone.small {
+
+}
+ 
+.en_social_buttons .simple {
+  width: 100px;
+  height: 30px;
+}
+
+.en_social_buttons:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+/* ==================================================================
+ * Utter randomness
+ * ================================================================== */
+
+/* hide the fonts.com badge in case it shows up */
+#mti_wfs_colophon {
+  display: none!important;
+}

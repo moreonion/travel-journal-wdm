@@ -1,0 +1,123 @@
+/* ########## layout.less ########################################### */
+
+/* ----------  Main Zentropy Layout Styles -------------------------- */
+
+.ahem,
+#skip-link {
+  display: none;
+}
+
+.js .js-hidden {
+  display: none;
+}
+
+/* ==================================================================
+ * Two Column Layout 
+ * ================================================================== */
+
+#page {
+  width: 100%;
+  margin: 0;
+}
+
+/* ---------- desktop layout --------------------------------------- */
+
+
+/* ---------- desktop layout --------------------------------------- */
+
+@media @desktop {
+
+  .en_left_wrapper,
+  .en_right_wrapper  {
+    float: right;
+    clear: right;
+  }
+
+  .twocolumn .en_right_wrapper {
+    float: right;
+    clear: right;
+    width: 52%;
+  }
+
+  .twocolumn .en_left_wrapper {
+    float: left;
+    clear: left;
+    width: @sidebar-second-width;
+    min-width: 370px;
+    z-index: 1000;
+  }
+}
+
+@media @huge {
+  .twocolumn .en_right_wrapper {
+    width: 34%;
+  }  
+}
+
+
+/* ==================================================================
+ * basic classes for layouts and reuse of layouts
+ * ================================================================== */
+
+/* ---------- middle macro ------------------------------------------ */
+
+.middle {
+  width: 94%;
+  padding: 0 3%;
+  max-width: @max-width;
+  clear: both;
+  overflow-x: hidden;
+  overflow-y: visible;
+  margin: 0 auto;
+  position: relative;
+  display: block;
+}
+
+@media @desktop {
+  .middle {
+    width: 95%;
+    max-width: none;
+    padding: 0 5% 0 0;
+  }
+}
+
+
+/* ---------- Menu mobile / default --------------------------------- */
+
+#main-menu {
+  float: none;
+  clear: both;
+  width: 100%;
+  li {
+    float: none;
+    clear: both;
+    width: 100%;
+  }
+}
+#mobile-menu-icon {
+  display: block;
+  width: 36px;
+  height: 36px;
+  float: right;
+  clear: right;
+  text-indent: 9999px;
+  overflow: hidden;
+}
+
+@media @desktop {
+
+  #main-menu {
+    float: right;
+    clear: right;
+    width: auto;
+    li {
+      float: left;
+      clear: none;
+      width: auto;
+    }
+  }
+  #mobile-menu-icon {
+    display: none;
+  }
+}
+

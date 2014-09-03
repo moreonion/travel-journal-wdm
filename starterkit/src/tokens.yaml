@@ -1,0 +1,20 @@
+# Replace <%= templates %> in files
+---
+# Tokens in the dev enviroment
+dev: 
+  options: 
+    data: 
+      file1: "../lib/jquer.fs.picker.js"
+      file2: "img/logo.png"
+  files: 
+    <%= project.name %>/src/theme.css: "<%= project.name %>/src/theme.css"
+
+# Tokens on Engaging Networks
+dist: 
+  options: 
+    data:
+      file1: "http://www.e-activist.com/ea-campaign/action.retrievefile.do?ea_fileid=12345"
+      file2: "http://www.e-activist.com/ea-campaign/action.retrievefile.do?ea_fileid=67890"
+  files: 
+    <%= project.name %>/src/theme.css: "<%= project.name %>/src/theme.css"
+
