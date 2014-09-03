@@ -2828,12 +2828,12 @@ td {
     float: right;
     clear: right;
   }
-  .twocolumn .en_left_wrapper {
+  .twocolumn .en_right_wrapper {
     float: right;
     clear: right;
     width: 52%;
   }
-  .twocolumn .en_right_wrapper {
+  .twocolumn .en_left_wrapper {
     float: left;
     clear: left;
     width: 33.333%;
@@ -2841,7 +2841,7 @@ td {
   }
 }
 @media screen and (min-width: 1600px) {
-  .twocolumn .en_left_wrapper {
+  .twocolumn .en_right_wrapper {
     width: 34%;
   }
 }
@@ -3051,7 +3051,7 @@ h6 {
   width: 107%;
   position: relative;
   left: -3%;
-  background: url('./images/striped.png') no-repeat bottom left transparent;
+  background: url('https://www.e-activist.com/ea-campaign/action.retrievefile.do?ea_fileid=47464') no-repeat bottom left transparent;
   padding-bottom: 25px;
 }
 #main .background img {
@@ -3102,15 +3102,15 @@ h6 {
  * ================================================================== */
 /* ---------- general stuff ----------------------------------------- */
 /* right column*/
-.en_right_wrapper {
+.en_left_wrapper {
   background-color: #f9f7f2;
   padding: 1.5em 5% 3em;
 }
 @media screen and (min-width: 900px) {
-  .en_right_wrapper {
+  .en_left_wrapper {
     /* sides switched here */
   
-    background: url('./images/torn_right.png') repeat-y top right transparent;
+    background: url('https://www.e-activist.com/ea-campaign/action.retrievefile.do?ea_fileid=47463') repeat-y top right transparent;
     padding-left: 1.5em;
     padding-right: 1.5em;
     padding-top: 3em;
@@ -3124,14 +3124,14 @@ h6 {
     padding-right: 70px;
     max-width: 550px;
   }
-  .en_right_wrapper input[type="submit"],
-  .en_right_wrapper input[type="button"],
-  .en_right_wrapper input[type="reset"],
-  .en_right_wrapper a.button,
-  .en_right_wrapper .button {
+  .en_left_wrapper input[type="submit"],
+  .en_left_wrapper input[type="button"],
+  .en_left_wrapper input[type="reset"],
+  .en_left_wrapper a.button,
+  .en_left_wrapper .button {
     margin: 0 auto 1.5em;
   }
-  .en_right_wrapper > div {
+  .en_left_wrapper > div {
     background-color: #f9f7f2;
   }
 }
@@ -3158,7 +3158,7 @@ br[clear="all"] {
 }
 /* left column */
 @media screen and (min-width: 900px) {
-  .en_left_wrapper {
+  .en_right_wrapper {
     padding-right: 6%;
     padding-left: 40%;
     position: absolute;
@@ -3168,30 +3168,30 @@ br[clear="all"] {
     padding-top: 3em;
     color: #f9f7f2;
   }
-  .en_left_wrapper h1,
-  .en_left_wrapper h2,
-  .en_left_wrapper h3,
-  .en_left_wrapper h4,
-  .en_left_wrapper h5,
-  .en_left_wrapper a,
-  .en_left_wrapper a:link,
-  .en_left_wrapper a:hover,
-  .en_left_wrapper a.focus,
-  .en_left_wrapper a.visited {
+  .en_right_wrapper h1,
+  .en_right_wrapper h2,
+  .en_right_wrapper h3,
+  .en_right_wrapper h4,
+  .en_right_wrapper h5,
+  .en_right_wrapper a,
+  .en_right_wrapper a:link,
+  .en_right_wrapper a:hover,
+  .en_right_wrapper a.focus,
+  .en_right_wrapper a.visited {
     color: #f9f7f2;
   }
-  .en_left_wrapper h1 {
+  .en_right_wrapper h1 {
     border-bottom: 0px solid transparent;
     text-align: left;
   }
   .background-info {
     /* if this class appplies background info will show up */
   
-    background: url('./images/pink_bg.png') repeat top left transparent;
+    background: url('https://www.e-activist.com/ea-campaign/action.retrievefile.do?ea_fileid=47459') repeat top left transparent;
   }
 }
 @media screen and (min-width: 1600px) {
-  .en_left_wrapper {
+  .en_right_wrapper {
     padding-right: 24%;
   }
 }
