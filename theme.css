@@ -3193,6 +3193,15 @@ br[clear="all"] {
   
     background: url('https://www.e-activist.com/ea-campaign/action.retrievefile.do?ea_fileid=47459') repeat top left transparent;
   }
+  #WDM_background_pic {
+    display: block;
+  }
+  .eaRightColumnContent {
+    display: none;
+  }
+  .background-info .eaRightColumnContent {
+    display: block;
+  }
 }
 @media screen and (min-width: 1600px) {
   .en_right_wrapper {

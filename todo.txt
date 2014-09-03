@@ -1,0 +1,8 @@
+ToDo
+
+JS that toggles background. How to toggle background info?
+
+* JS only applies on >= desktop breakpoint (alles über 900px)
+* JS usees this a tag as tigger: <a href=#Action_headline_FlorianDiv title="Find out more about this campaign">Background info</a>
+* add the class .background-info to the container .en_right_wrapper (this will add the background and the positioning) 
+* JS should add the following markup as first element to the container .en_right_wrapper ---> <a href=#close id="thex" title="Close the background info">Close</a>
