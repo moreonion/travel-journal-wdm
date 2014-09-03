@@ -3167,7 +3167,6 @@ br[clear="all"] {
     bottom: 0;
     padding-top: 3em;
     color: #f9f7f2;
-    background: url('./images/pink_bg.png') repeat top left transparent;
   }
   .en_left_wrapper h1,
   .en_left_wrapper h2,
@@ -3185,12 +3184,26 @@ br[clear="all"] {
     border-bottom: 0px solid transparent;
     text-align: left;
   }
+  .background-info {
+    /* if this class appplies background info will show up */
+  
+    background: url('./images/pink_bg.png') repeat top left transparent;
+  }
 }
 @media screen and (min-width: 1600px) {
   .en_left_wrapper {
     padding-right: 24%;
   }
 }
+/* trigger background info */
+/*.eaLeftColumnContent {
+  display: none;
+}
+
+
+.background-info .eaLeftColumnContent {
+  display: block;
+}*/
 /* ---------- buttons ----------------------------------------------- */
 input[type="submit"],
 input[type="button"],

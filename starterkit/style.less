@@ -158,7 +158,7 @@ h6 {
 
 #main {
   padding-top: @oneline;
-
+  
   .background {
     overflow: hidden;
     margin-bottom: @oneline*2;
@@ -293,7 +293,7 @@ br[clear="all"] {
 
 @media @desktop {
   
-  .en_left_wrapper {
+  .en_left_wrapper  {
     padding-right: 6%;
     padding-left: 40%;
     position: absolute;
@@ -302,7 +302,6 @@ br[clear="all"] {
     bottom: 0;
     padding-top: @oneline*2;
     color: @mywhite;
-    background: url('./images/pink_bg.png') repeat top left transparent;
     
     h1, h2, h3, h4, h5, a, a:link, a:hover, a.focus, a.visited {
       color: @mywhite;
@@ -311,15 +310,31 @@ br[clear="all"] {
     h1 {
       border-bottom: 0px solid transparent;
       text-align: left;
-    }
+    }    
+  }
+  
+  .background-info { /* if this class appplies background info will show up */
+    background: url('./images/pink_bg.png') repeat top left transparent;
   }
 }
+
 
 @media @huge {
   .en_left_wrapper {
     padding-right: 24%;
   }
 }
+
+/* trigger background info */
+
+/*.eaLeftColumnContent {
+  display: none;
+}
+
+
+.background-info .eaLeftColumnContent {
+  display: block;
+}*/
 
 /* ---------- buttons ----------------------------------------------- */
 
