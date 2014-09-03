@@ -78,15 +78,16 @@ a:active {
 /* ---------- headings ---------------------------------------------- */
 
 h1 {
-  .f(30);
+  .f(35);
   color: @heading_color;
   font-family: @fancyserifb;
   font-weight: normal;
   font-style: normal;
   text-decoration: none;
   word-wrap: break-word;
-  border-bottom: 4px solid @heading_color;
+  border-bottom: 6px solid @heading_color;
   text-align: center;
+
 
   .en_right_wrapper & {
     color: @heading_second_color;
@@ -96,6 +97,9 @@ h1 {
 @media @tablet {
   h1 {
     .f(45);
+    margin-bottom: 0.533333em/2;
+    padding-bottom: 0.533333em/2;
+    border-bottom: 8px solid @heading_color;
   }
 }
 
