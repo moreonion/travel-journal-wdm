@@ -2836,7 +2836,7 @@ td {
   .twocolumn .en_left_wrapper {
     float: left;
     clear: left;
-    width: 33.333%;
+    width: 45%;
     min-width: 370px;
     z-index: 1000;
   }
@@ -3740,6 +3740,7 @@ label,
   border-radius: 7px;
   text-shadow: 1px 1px 1px #7f2a45;
   border: 1px solid #7f2a45;
+  max-width: 350px;
 }
 .share_buttons_raw a.fb_share_link,
 .share_buttons a.fb_share_link {
