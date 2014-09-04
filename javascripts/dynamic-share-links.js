@@ -19,6 +19,10 @@ $(document).ready(function() {
             var dest = share_links[link.className]
                 .replace(/{{url}}/, encodeURIComponent(url));
             $(link).attr('href', dest);
+            $(link).on('click', function(ev) {
+                ga('send', 'event', 'share',
+                   ev.target.className, ev.target.href);
+            });
         });
     });
 });
