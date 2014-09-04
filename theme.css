@@ -3176,6 +3176,18 @@ br[clear="all"] {
 .eaLeftColumnContent {
   margin-bottom: 1.5em;
 }
+#thex {
+  color: transparent;
+  line-height: 0;
+  font-size: 0px;
+  display: block;
+  height: 45px;
+  width: 45px;
+  background: url('https://moreonion.github.io/travel-journal-wdm/images/thex.png') no-repeat center center transparent;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
 @media screen and (min-width: 900px) {
   .en_right_wrapper {
     padding-right: 6%;
@@ -3734,7 +3746,7 @@ label,
   border-radius: 7px;
   text-shadow: 1px 1px 1px #7f2a45;
   border: 1px solid #7f2a45;
-  max-width: 350px;
+  max-width: 320px;
 }
 .share_buttons_raw a.fb_share_link,
 .share_buttons a.fb_share_link {
