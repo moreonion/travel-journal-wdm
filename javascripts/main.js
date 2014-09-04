@@ -1,10 +1,11 @@
 $(document).ready(function() {
     var toggleBackgroundInfo = function toggleBackgroundInfo() {
         var wrapper = $('.en_right_wrapper');
+        var inner = $('#Action_headline_FlorianDiv');
         wrapper.toggleClass('background-info');
 
-        if (wrapper.find('#thex').length === 0) {
-            wrapper.prepend(
+        if (inner.find('#thex').length === 0) {
+            inner.prepend(
                 $('<a href="#close" id="thex" ' +
                   'title="Close the background info">Close</a>'
                  ).on('click', toggleBackgroundInfo)
