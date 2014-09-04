@@ -3170,11 +3170,13 @@ h6 {
 .eaLeftColumnFiller,
 .eaLabelSpacer,
 br[clear="all"] {
-  display: none;
+  visibility: hidden;
+  display: block;
+  height: 0px;
 }
 /* left column */
 .eaLeftColumnContent {
-  margin-bottom: 1.5em;
+  margin-bottom: 0.75em;
 }
 #thex {
   color: transparent;
