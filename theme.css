@@ -2831,7 +2831,7 @@ td {
   .twocolumn .en_right_wrapper {
     float: right;
     clear: right;
-    width: 52%;
+    width: 47%;
   }
   .twocolumn .en_left_wrapper {
     float: left;
@@ -3055,7 +3055,7 @@ h6 {
   width: 107%;
   position: relative;
   left: -3%;
-  background: url('https://www.e-activist.com/ea-campaign/action.retrievefile.do?ea_fileid=47464') no-repeat bottom left transparent;
+  background: url('https://moreonion.github.io/travel-journal-wdm/images/paper_bg.png') no-repeat bottom left transparent;
   padding-bottom: 25px;
 }
 #main .background img {
@@ -3126,7 +3126,7 @@ h6 {
   .en_left_wrapper {
     /* sides switched here */
   
-    background: url('https://www.e-activist.com/ea-campaign/action.retrievefile.do?ea_fileid=47463') repeat-y top right transparent;
+    background: url('https://moreonion.github.io/travel-journal-wdm/images/torn_right.png') repeat-y top right transparent;
     padding-left: 1.5em;
     padding-right: 1.5em;
     padding-top: 3em;
@@ -3138,7 +3138,7 @@ h6 {
     top: 0;
     bottom: 0;
     padding-right: 70px;
-    max-width: 550px;
+    max-width: 600px;
   }
   .en_left_wrapper input[type="submit"],
   .en_left_wrapper input[type="button"],
@@ -3173,6 +3173,9 @@ br[clear="all"] {
   display: none;
 }
 /* left column */
+.eaLeftColumnContent {
+  margin-bottom: 1.5em;
+}
 @media screen and (min-width: 900px) {
   .en_right_wrapper {
     padding-right: 6%;
@@ -3203,7 +3206,7 @@ br[clear="all"] {
   .background-info {
     /* if this class appplies background info will show up */
   
-    background: url('https://www.e-activist.com/ea-campaign/action.retrievefile.do?ea_fileid=47459') repeat top left transparent;
+    background: url('https://moreonion.github.io/travel-journal-wdm/images/pink_bg.png') repeat top left #b4416e;
   }
   #MORE_ONION_action_1_background_imageDiv {
     display: block;
@@ -3220,15 +3223,6 @@ br[clear="all"] {
     padding-right: 24%;
   }
 }
-/* trigger background info */
-/*.eaLeftColumnContent {
-  display: none;
-}
-
-
-.background-info .eaLeftColumnContent {
-  display: block;
-}*/
 /* ---------- buttons ----------------------------------------------- */
 input[type="submit"],
 input[type="button"],
@@ -3673,13 +3667,13 @@ label,
   margin-top: 0.5em;
 }
 .ea-issue-response-image.ea-issue-response-y {
-  background-image: url(//e-activist.com/ea-campaign/images/agree.gif);
+  background-image: url(https://e-activist.com/ea-campaign/images/agree.gif);
 }
 .ea-issue-response-image.ea-issue-response-n {
-  background-image: url(//e-activist.com/ea-campaign/images/disagree.gif);
+  background-image: url(https://e-activist.com/ea-campaign/images/disagree.gif);
 }
 .ea-issue-response-image.ea-issue-response-u {
-  background-image: url(//e-activist.com/ea-campaign/images/undecided.gif);
+  background-image: url(https://e-activist.com/ea-campaign/images/undecided.gif);
 }
 /* ==================================================================
  * EN sharing + my own sharing
