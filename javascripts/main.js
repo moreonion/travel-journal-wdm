@@ -15,16 +15,13 @@ $(document).ready(function() {
 
     var windowResized = function(mql) {
         if (mql.matches) { // window is at least 900px wide;
-            $('a[title="Click here to read the background info"]')
-                .on('click', toggleBackgroundInfo);
+            $('a.toggle-background-info').on('click', toggleBackgroundInfo);
         } else { // window is less than 900px wide;
-            $('a[title="Click here to read the background info"]')
-                .off('click', toggleBackgroundInfo);
+            $('a.toggle-background-info').off('click', toggleBackgroundInfo);
         }
     }
 
     var mql = window.matchMedia("(min-width: 900px)");
     windowResized(mql);
     mql.addListener(windowResized);
-
 });

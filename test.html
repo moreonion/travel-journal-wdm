@@ -68,9 +68,9 @@
   <h1>Remind Justine to not forget XYZ</h1>
   <p>Here is the introductory paragraph that should not look loose if possible</p>
   <p>In fact there might be a second one altogether here that is so convincing everyone will immediatly take action.</p>
-  <p><a href=# title="Click here to read the background info">Background info</a></p>
-  
-  
+  <p><a href=# title="Click here to read the background info" class="toggle-background-info">Background info</a></p>
+
+
 </div>
 <div id='WDM_background_pic' class='eaRightColumnContent'><div class="background"><img src="images/background_test.png" border="0" alt="Sara looks serious" title="Sara looks serious" /></div></div>
 <div id='Action_headline_FlorianDiv' class='eaRightColumnContent'>
@@ -164,7 +164,7 @@ $(window).load(function(){
   sortTwoColumn();
   $('.eaSubmitResetButtonGroup').appendTo($('.en_left_wrapper').last());
   $('body').addClass('twocolumn');
-  
+
   // enable Picker and Selector
   // see http://www.benplum.com/formstone/
   if (typeof $.fn.selecter == 'function') {
@@ -181,7 +181,7 @@ $(window).load(function(){
       label.parent().addClass('multiline');
     }
   });
-  
+
   // move validation icon next to label
   // and the error message below the label
   $('.eaErrorMessage').each(function() {
@@ -192,7 +192,7 @@ $(window).load(function(){
     icon.appendTo(label);
     self.appendTo(field);
   });
-  
+
   // add class to field, where error occured
   $(window).on('DOMSubtreeModified', '.eaErrorMessage', function(e) {
     var self = $(e.target);
@@ -220,4 +220,3 @@ http://www.e-activist.com/ea-campaign/action.retrievefile.do?ea_fileid=47471 - j
 
 </body>
 </html>
-
