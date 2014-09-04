@@ -3682,7 +3682,7 @@ label,
   background-image: url(//e-activist.com/ea-campaign/images/undecided.gif);
 }
 /* ==================================================================
- * EN sharing
+ * EN sharing + my own sharing
  * ================================================================== */
 .en_social_buttons {
   clear: both;
@@ -3718,6 +3718,79 @@ label,
   visibility: hidden;
   line-height: 0;
   height: 0;
+}
+.share_buttons_raw a,
+.share_buttons a,
+.share_buttons_raw a:visited,
+.share_buttons a:visited {
+  display: block;
+  padding: .7em 2em .7em 68px;
+  color: #f9f7f2;
+  font-family: 'AmericanTypwrterITCW01- 731031', Georgia, Times, "Times New Roman", serif;
+  background-image: url('./images/share_new.png');
+  background-color: #b83d65;
+  background-position: 0 -7px;
+  background-repeat: no-repeat;
+  margin-bottom: 0.75em;
+  font-size: 120%;
+  -webkit-border-radius: 7px;
+  -khtml-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -o-border-radius: 7px;
+  border-radius: 7px;
+  text-shadow: 1px 1px 1px #7f2a45;
+  border: 1px solid #7f2a45;
+}
+.share_buttons_raw a.fb_share_link,
+.share_buttons a.fb_share_link {
+  background-position: 0 -157px;
+  background-color: #3F5AA7;
+  text-shadow: 1px 1px 1px #2a3c6f;
+  border: 1px solid #2a3c6f;
+}
+.share_buttons_raw a.fb_share_link:hover,
+.share_buttons a.fb_share_link:hover,
+.share_buttons_raw a.fb_share_link:focus,
+.share_buttons a.fb_share_link:focus {
+  background-position: 0 -232px;
+  background-color: #4563B7;
+}
+.share_buttons_raw a.tw_share_link,
+.share_buttons a.tw_share_link {
+  background-position: 0 -7;
+  background-color: #09BBEC;
+  text-shadow: 1px 1px 1px #0681a2;
+  border: 1px solid #0681a2;
+}
+.share_buttons_raw a.tw_share_link:hover,
+.share_buttons a.tw_share_link:hover,
+.share_buttons_raw a.tw_share_link:focus,
+.share_buttons a.tw_share_link:focus {
+  background-position: 0 -82px;
+  background-color: #26C7F3;
+}
+.share_buttons_raw a.email_share_link,
+.share_buttons a.email_share_link,
+.share_buttons_raw a.email_signup_link,
+.share_buttons a.email_signup_link {
+  background-position: 0 -307px;
+}
+.share_buttons_raw a.email_share_link:hover,
+.share_buttons a.email_share_link:hover,
+.share_buttons_raw a.email_signup_link:hover,
+.share_buttons a.email_signup_link:hover,
+.share_buttons_raw a.email_share_link:focus,
+.share_buttons a.email_share_link:focus,
+.share_buttons_raw a.email_signup_link:focus,
+.share_buttons a.email_signup_link:focus {
+  background-position: 0 -382px;
+  background-color: #c5416c;
+}
+.share_buttons_raw a:hover,
+.share_buttons a:hover,
+.share_buttons_raw a:focus,
+.share_buttons a:focus {
+  background-color: #c34b72;
 }
 /* ==================================================================
  * Utter randomness

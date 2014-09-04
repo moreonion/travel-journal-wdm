@@ -825,7 +825,7 @@ label,
 
 
 /* ==================================================================
- * EN sharing
+ * EN sharing + my own sharing
  * ================================================================== */
  
 .en_social_buttons {
@@ -874,6 +874,64 @@ label,
   line-height: 0;
   height: 0;
 }
+
+.share_buttons_raw, .share_buttons {
+  
+  a, a:visited {
+    display: block;
+    padding: .7em 2em .7em 68px;
+    color: @mywhite;
+    font-family: @fancyserif;
+    background-image: url('./images/share_new.png');
+    background-color: @primary_color;
+    background-position: 0 -7px;
+    background-repeat: no-repeat;
+    margin-bottom: @oneline/2;
+    font-size: 120%;
+    .rounded(7px);
+    text-shadow: 1px 1px 1px darken(@primary_color,15%);
+    border: 1px solid darken(@primary_color,15%);
+  }
+  
+  a.fb_share_link {
+    background-position: 0 -150px-7;
+    background-color: #3F5AA7;
+    text-shadow: 1px 1px 1px darken(#3F5AA7,15%);
+    border: 1px solid darken(#3F5AA7,15%);
+    
+    &:hover, &:focus {
+      background-position: 0 -225px-7;
+      background-color: #4563B7;
+    }
+  }
+  
+  a.tw_share_link {
+    background-position: 0 0-7;
+    background-color: #09BBEC;
+    text-shadow: 1px 1px 1px darken(#09BBEC,15%);
+    border: 1px solid darken(#09BBEC,15%);
+    
+    &:hover, &:focus {
+      background-position: 0 -75px-7;
+      background-color: #26C7F3;
+    }
+  }
+  
+  a.email_share_link, a.email_signup_link {
+    background-position: 0 -300px-7;   
+    
+    &:hover, &:focus {
+      background-position: 0 -375px-7;
+      background-color: #c5416c;
+    }
+  }
+  
+  a:hover, a:focus {
+    background-color: lighten(@primary_color,5%);
+  }
+}
+
+
 
 /* ==================================================================
  * Utter randomness
