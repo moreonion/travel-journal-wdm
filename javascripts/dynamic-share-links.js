@@ -25,4 +25,8 @@ $(document).ready(function() {
             });
         });
     });
+    
+    $('.eaSubmitButton').on('click', function () {
+        ga('send', 'event', 'submit', window.location);
+    });
 });
