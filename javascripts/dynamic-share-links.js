@@ -26,6 +26,13 @@ $(document).ready(function() {
         });
     });
     
+    $('.share_buttons_raw').each(function(i, buttons) {
+         $(buttons).find('a').on('click', function(ev) {
+            ga('send', 'event', 'share',
+                ev.target.className, ev.target.href);
+         });
+    });
+    
     $('.eaSubmitButton').on('click', function () {
         ga('send', 'event', 'submit', window.location);
     });
