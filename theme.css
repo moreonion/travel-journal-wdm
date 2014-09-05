@@ -3325,6 +3325,14 @@ textarea:focus {
   -moz-box-shadow: 0px 0px 4px #ffffff;
   box-shadow: 0px 0px 4px #ffffff;
 }
+textarea,
+.eaMessageContent {
+  font-size: 100%;
+  min-height: 400px;
+}
+#MORE_ONION_action_1_message_signoff_ {
+  display: none;
+}
 /* ---------- checkbox & radio -------------------------------------- */
 input[type="checkbox"] {
   width: auto;
