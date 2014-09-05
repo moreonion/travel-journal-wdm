@@ -3179,6 +3179,7 @@ br[clear="all"] {
 /* left column */
 .eaLeftColumnContent {
   margin-bottom: 0.75em;
+  background-color: #F9F7F2;
 }
 #thex {
   color: transparent;
@@ -3224,7 +3225,8 @@ br[clear="all"] {
   
     background: url('https://moreonion.github.io/travel-journal-wdm/images/pink_bg.png') repeat top left #b4416e;
   }
-  #MORE_ONION_action_1_background_imageDiv {
+  #MORE_ONION_action_1_background_imageDiv,
+  #MORE_ONION_action_1_thank_you_background_imageDiv {
     display: block;
   }
   .eaRightColumnContent {
