@@ -266,6 +266,7 @@ h6 {
     bottom: 0;
     padding-right: 70px;
     max-width: 600px;
+    min-height: 900px;
     
     input[type="submit"], input[type="button"], input[type="reset"], a.button, .button  {
       margin: 0 auto @oneline;
@@ -274,6 +275,19 @@ h6 {
 
   .en_left_wrapper > div {
     background-color: @form_bg_color;
+  }
+}
+
+@media @big-breakpoint {
+  .en_left_wrapper {
+    min-height: 1200px;
+  }
+}
+
+
+@media @huge-breakpoint {
+  .en_left_wrapper {
+    min-height: 1400px;
   }
 }
 

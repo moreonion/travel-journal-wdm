@@ -3141,6 +3141,7 @@ h6 {
     bottom: 0;
     padding-right: 70px;
     max-width: 600px;
+    min-height: 900px;
   }
   .en_left_wrapper input[type="submit"],
   .en_left_wrapper input[type="button"],
@@ -3151,6 +3152,16 @@ h6 {
   }
   .en_left_wrapper > div {
     background-color: #f9f7f2;
+  }
+}
+@media 1150px {
+  .en_left_wrapper {
+    min-height: 1200px;
+  }
+}
+@media 1600px {
+  .en_left_wrapper {
+    min-height: 1400px;
   }
 }
 .eaRightColumnContent {
