@@ -3837,6 +3837,46 @@ label,
 /* ==================================================================
  * Utter randomness
  * ================================================================== */
+/* progress bar */
+.thermometer {
+  /* wrapper around the whole box */
+
+  margin-bottom: 1.5em;
+}
+.t_body {
+  /* wrapper of the pgbar */
+
+  background-color: #f6f2e4;
+  border: 1px solid #f0e9d1;
+  height: 32px;
+  -webkit-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.t_level {
+  /* the thing that shows the progress */
+
+  background: url('https://moreonion.github.io/travel-journal-wdm/images/striped.png') repeat-x center left transparent;
+  height: 32px;
+  min-width: 15px;
+  margin-left: 5px;
+  -webkit-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+.t_current {
+  /* shows the current number of signups */
+
+}
+.t_target {
+  /* shows the current target */
+
+}
 /* little chevron */
 span.chevron {
   font-size: 0px;
