@@ -1,7 +1,7 @@
 $(document).ready(function() {
     var toggleBackgroundInfo = function toggleBackgroundInfo() {
         var wrapper = $('.en_right_wrapper');
-        var inner = $('#Action_headline_FlorianDiv');
+        var inner = $('#MORE_ONION_action_1_background_infoDiv');
         wrapper.toggleClass('background-info');
 
         if (inner.find('#thex').length === 0) {
