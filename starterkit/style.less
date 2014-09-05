@@ -193,6 +193,13 @@ h6 {
 @media @tablet {
   #main {
     padding-top: @oneline*2;
+    
+    .background {
+      img {
+        width: 132%;
+        margin-left: -26%;
+      }
+    }
   }
 }
 
@@ -213,7 +220,7 @@ h6 {
       width: 72%;
 
       img {
-        width: 100%;
+        width: 130%;
         height: auto;
         display: block;
         margin-left: 0;
@@ -226,11 +233,17 @@ h6 {
   } /* end of main */
 } /* end of desktop */
 
-@media @desktop {
+@media @big {
   #main {
   width: 100%;
   padding-left: 0;
   padding-right: 0;
+  
+    .background {     
+      img {
+        width: 100%;
+      }
+    }
   }
 }
 

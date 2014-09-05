@@ -3085,6 +3085,10 @@ h6 {
   #main {
     padding-top: 3em;
   }
+  #main .background img {
+    width: 132%;
+    margin-left: -26%;
+  }
 }
 @media screen and (min-width: 900px) {
   #main {
@@ -3103,7 +3107,7 @@ h6 {
     width: 72%;
   }
   #main .background img {
-    width: 100%;
+    width: 130%;
     height: auto;
     display: block;
     margin-left: 0;
@@ -3115,11 +3119,14 @@ h6 {
   /* end of main */
 }
 /* end of desktop */
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1150px) {
   #main {
     width: 100%;
     padding-left: 0;
     padding-right: 0;
+  }
+  #main .background img {
+    width: 100%;
   }
 }
 /* ---------- footer ------------------------------------------------ */
