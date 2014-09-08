@@ -24,4 +24,26 @@ $(document).ready(function() {
     var mql = window.matchMedia("(min-width: 900px)");
     windowResized(mql);
     mql.addListener(windowResized);
+
+    $('input[onchange="checkdep(this);"]')
+        .removeAttr('onchange')
+        .on('change', function (ev) {
+            if (typeof window.checkdep !== 'undefined') {
+                window.checkdep(ev.target);
+            }
+        });
+    $('input[onclick="checkdep(this);"]')
+        .removeAttr('onclick')
+        .on('cick', function (ev) {
+            if (typeof window.checkdep !== 'undefined') {
+                window.checkdep(ev.target);
+            }
+        });
+    $('input[onblur="validatefield(this);"]')
+        .removeAttr('onblur')
+        .on('blur', function (ev) {
+            if (typeof window.validatefield !== 'undefined') {
+                window.validatefield(ev.target);
+            }
+        });
 });
