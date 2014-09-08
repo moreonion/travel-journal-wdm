@@ -3366,7 +3366,7 @@ input[type="checkbox"] {
 }
 .eaQuestionCheckbox label,
 .eaQuestionRadio label {
-  margin-left: 24px;
+  margin-left: 20px;
 }
 .picker {
   margin-bottom: 0;
@@ -3374,7 +3374,7 @@ input[type="checkbox"] {
 .picker .picker-label {
   float: none;
   display: block;
-  margin-left: 24px;
+  margin-left: 38px;
 }
 .picker .picker-handle {
   background-color: #f9f7f2;
@@ -3386,8 +3386,11 @@ input[type="checkbox"] {
 .picker.picker-radio.checked:hover .picker-flag {
   background-color: #999999;
 }
-.eaQuestionCheckbox .picker .picker-handle {
-  margin-top: 1px;
+.eaQuestionRadio .picker .picker-label {
+  margin-top: -24px;
+}
+.eaQuestionCheckbox .picker .picker-label {
+  margin-left: 8px;
 }
 .eaQuestionRadio .picker .picker-handle {
   margin-top: 3px;
@@ -3419,7 +3422,7 @@ label,
   margin-bottom: 1.5em;
   line-height: 1.3em;
   margin-bottom: 0;
-  color: #545448;
+  color: #2b2b25;
 }
 .eaFormElementLabel,
 .eaQuestionLabel,
