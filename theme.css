@@ -3084,7 +3084,7 @@ h6 {
 }
 @media screen and (min-width: 900px) {
   #main {
-    width: 90%;
+    width: 100%;
     max-width: 100%;
     padding-right: 0;
     padding-top: 0;
