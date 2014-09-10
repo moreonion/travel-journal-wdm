@@ -1,7 +1,7 @@
 $(document).ready(function() {
     var share_links = {
-        'tw_share_link': 'http://www.facebook.com/sharer.php?u={{url}}',
-        'fb_share_link': 'http://www.twitter.com/share?url={{url}}',
+        'fb_share_link': 'http://www.facebook.com/sharer.php?u={{url}}',
+        'tw_share_link': 'http://www.twitter.com/share?url={{url}}',
         'email_share_link' :'',
         'email_signup_link': ''
     }
