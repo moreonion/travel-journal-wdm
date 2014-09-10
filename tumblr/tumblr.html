@@ -1,723 +1,742 @@
-<!DOCTYPE html>
-<!--
-
-Theme: WDM Travel journal - based on Ashley v0.6
-Author: More Onion - based on Jxnblk  [http://jxnblk.com]
-For: Tumblr  [http://tumblr.com/]
-Terms: Protected under Creative Commons. [http://creativecommons.org/licenses/by-nc/3.0/]
-
--->
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<!-- Custom Variables -->
-<meta name="image:Logo" content=""/>
-<meta name="text:Colophon" content="Travel Journal by WDM"/>
-<meta name="text:GoogleWebFont" content="Gentium Book Basic"/>
-<meta name="text:GoogleWebFontURL" content="Gentium+Book+Basic"/>
-<meta name="color:Background" content="#F9F7F2"/>
-<meta name="color:Text" content="#444"/>
-<meta name="color:Link" content="#09b"/>
-
-<link href="https://moreonion.github.io/travel-journal-wdm/images/wdm_favicon.ico" rel="shortcut icon" type="image/ico" />
-<link href="https://moreonion.github.io/travel-journal-wdm/images/wdm_favicon.ico" rel="icon" type="image/ico" />
-
-<!-- Open Graph meta tags -->
-<meta property="og:title" content="Justine Greenings\u0027 adventures" />
-<meta property="og:site_name" content="Justine Greenings\u0027 Travel Journal"/>
-<meta property="og:url" content="http://justine-greening.tumblr.com/" />
-<meta property="og:description" content="Development Secretary Justine Greening is going to New York representing the UK at the New Alliance meeting. This is her travel jorunal. />
-<meta property="og:type" content="website" />
-<meta property="og:locale" content="en_GB" />
-<meta property="article:author" content="http://www.wdm.org.uk" />
-<meta property="article:publisher" content="//www.facebook.com/worlddevelopmentmovement" />
-<meta property="og:image" content="//moreonion.github.io/travel-journal-wdm/FB_preview/FB_preview_first_action_big.jpg" />
-
-<!-- Twitter meta tags -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@wdmuk">
-<meta name="twitter:creator" content="@wdmuk">
-<meta name="twitter:url" content="http://justine-greening.tumblr.com/">
-<meta name="twitter:title" content="Follow Justine Greening\u0027 travel journal!">
-<meta name="twitter:description" content="Development Secretary Justine Greening is going to New York representing the UK at the New Alliance meeting. This is her travel jorunal.">
-<meta name="twitter:image:src" content="//moreonion.github.io/travel-journal-wdm/TW_preview/png/twitter_preivew.jpg" />
-
-
-<title>{Title}{block:PostSummary} &mdash; {PostSummary}{/block:PostSummary}</title>
-{block:Description}<meta name="description" content="{MetaDescription}">{/block:Description}
-<link rel="shortcut icon" href="{Favicon}">
-<link rel="apple-touch-icon" href="{PortraitURL-128}">
-<link rel="alternate" type="application/rss+xml" href="{RSS}">
-
-<link href="https://moreonion.github.io/travel-journal-wdm/tumblr/tumblr.css" rel="stylesheet" type="text/css">
-
-<!-- Fonts.com fonts loaded -->
-<script type="text/javascript" src="http://fast.fonts.net/jsapi/ee2f1f05-77cc-44f0-89f6-e11738a048de.js"></script>
-
-<!-- jquery 1.7 -->
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
-
-<!-- loads hello bar -->
-<script type="text/javascript" src="//s3.amazonaws.com/scripts.hellobar.com/c7815d25b5d88660b29c28f09a9867180aafa25f.js"></script>
-
-<!-- google analytics tracking code -->
-<script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
- m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-ga('create', 'UA-54425360-1', 'auto');
-ga('send', 'pageview');
-
-</script>
-
-<!-- optimizely tracking code -->
-<script src="//cdn.optimizely.com/js/1865810133.js"></script>
-
-<!-- Share JS -->
-<script src="http://moreonion.github.io/travel-journal-wdm/javascripts/dynamic-share-links.js"></script>
-
-<!-- SumoMe script -->
-<script src="//load.sumome.com/" data-sumo-site-id="a3bbcb0de11b023d7222f81c82f7968ddbddb37058d3e1b87be5ff73853415c2" async></script>
-
-{block:IfGoogleWebFont}
-<link href='http://fonts.googleapis.com/css?family={text:GoogleWebFontURL}' rel='stylesheet' type='text/css'>
-{/block:IfGoogleWebFont}
-<meta name=viewport content='width=device-width, initial-scale=1'>
-<!--[if lt IE 9]>
-<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
-<style>
-
-article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}audio,canvas,video{display:inline-block}audio:not([controls]){display:none;height:0}[hidden]{display:none}body,h1,h2,h3,h4,h5,h6,p,ul,ol,dl{margin:0;padding:0}a:focus{outline:thin dotted}a:active,a:hover{outline:0}b,strong{font-weight:bold}dfn{font-style:italic}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}mark{background:#ff0;color:#000}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em}q{quotes:"\201C" "\201D" "\2018" "\2019"}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:0}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:0.35em 0.625em 0.75em}legend{border:0;padding:0}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0}button,input{line-height:normal}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}textarea{overflow:auto;vertical-align:top}table{border-collapse:collapse;border-spacing:0}
-
-body {
-  color: {color:Text};
-  background: {color:Background} url('http://static.tumblr.com/tf8wdpu/pTgnbamew/paper_bg_bright.png') repeat top left;
-  font-family: Georgia, serif;
-  font-size: 100%;
-  line-height: 1.5;
-  font-weight: 400;
-}
-
-
-h1, h2, .h1, .h2 {
-  font-weight: 400;
-  line-height: 1.25;
-  margin-top: .5em;
-  font-family: 'AmericanTypwrterITCW01- 731010', Georgia, serif;
-}
-
-h1, .h1 {
-  font-size: 32px;
-}
-
-h2, .h2 {
-  font-size: 24px;
-}
-
-h3, .h3 {
-  font-size: 20px;
-}
-
-h1+h2 { margin-top: 0; }
-
-p, .p, ul, ol {
-  font-size: 18px;
-}
-
-small, .small {
-  font-size: 14px;
-}
-
-strong, .strong {
-  font-weight: 700;
-}
-
-p, ul, ol { margin-top: 1em; }
-
-@media screen and (min-width: 480px) {
-  h1, .h1 { font-size: 48px; }
-  h2, .h2 { font-size: 32px; }
-  h3, .h3 { font-size: 24px; }
-  p, .p, ul, ol { font-size: 20px;}
-  small, .small { font-size: 16px;}
-}
-
-@media screen and (min-width: 640px) {
-  h1, .h1 { font-size: 64px; }
-  h2, .h2 { font-size: 48px; } 
-  h3, .h3 { font-size: 32px; }
-}
-
-
-.wrap {
-  width: 90%;
-  padding: 0 5%;
-  max-width: 48em;
-  margin: 0 auto;
-  overflow: hidden;
-}
-
-article {
-  margin-top: 4em;
-}
-
-a {
-  color: {color:Link};
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-header {
-  width: 90%;
-  padding: 12em 5% 0;
-  max-width: 48em;
-  margin: 0 auto;
-  overflow: hidden;
-}
-
-.logo {
-  float: left;
-  margin-right: 1em;
-  position: absolute;
-  top: 15px;
-  left: 0;
-}
-
-#envelope {
-float: right;
-clear: right;
-margin-bottom: -2em;
-
-}
-
-header h1, header p {
-  margin: 0;
-}
-
-header a, a.post-title {
-  color: {color:Text};
-}
-
-a.post-title:hover {
-  text-decoration: none;
-  color: {color:Link};
-}
-
-header a:hover {
-  text-decoration: none;
-}
-
-.post img,
-.photoset,
-.photoset img,
-.photoset_row {
-  max-width: 100%;
-}
-
-.post iframe, .video object {
-  width: 100%;
-  max-width: 100%;
-}
-
-.post blockquote {
-  padding-left: 1em;
-  border-left: 1px solid #ddd;
-}
-
-.post ul, .post ol {
-  margin-left: 2em;
-}
-
-.post footer ul, .post footer ol {
-  margin: 0;
-}
-
-.quote blockquote {
-  padding: 0;
-  border: none;
-  font-style: italic;
-}
-
-.quote .source {
-  text-align: right;
-}
-
-.post footer {
-  padding: 0;
-  margin-top: 1em;
-  color: #aaa;
-  font-style: italic;
-}
-
-.post footer a {
-  color: #6B6864;
-}
-
-
-.post footer a:hover {
-  color: #999;
-}
-
-.post footer .source {
-  float: right;
-  margin-right: 0;
-}
-
-.post footer ul li {
-  display: inline-block;
-  margin-right: 1em;
-}
-
-.tags {
-  margin-top: 1em;
-}
-
-.pagination {
-  margin-top: 4em;
-  text-align: center;
-  line-height: 3em;
-  overflow: hidden;
-}
-
-.pagination a {
-  display: block;
-  height: 3em;
-  padding: 0 1em;
-  border-radius: 0.25em;
-}
-
-.pagination a:hover {
-  background: #eee;
-  text-decoration: none;
-}
-
-.pagination .previous {
-  float: left;
-}
-
-.pagination .next {
-  float: right;
-}
-
-
-footer.wrap {
-  padding-top: 2em;
-  padding-bottom: 2em;
-}
-
-ul.pages {
-  list-style: none;
-}
-
-ul.pages li {
-  display: inline-block;
-  margin-right: 1em;        
-}
-
-ul.pages li a {
-  display: block;
-  height: 3em;
-  line-height: 3em;
-}
-
-
-/* Permalink Notes */
-
-aside.notes {
-  margin-top: 4em;
-}
-
-ol.notes {
-  list-style: none;
-  margin-top: 1em;
-  border: 1px solid #ddd;
-  border-radius: 0.25em;
-}
-
-ol.notes, ol.notes a {
-  color: #aaa;
-}
-
-li.note {
-  display: block;
-  line-height: 2em;
-  padding: 0.5em 1em;
-  border-bottom: 1px solid #ddd;
-}
-li.note:last-child {
-  border: none;
-}
-
-ol.notes li.note img.avatar {
-  display: block;
-  float: left;
-  width: 2em;
-  height: 2em;
-  margin-right: 1em;
-  border-radius: 0.25em;
-}
-
-.notes .action a {
-  color: {color:Text};
-}
-
-.action {
-  display: block;
-  margin-left: 3em;
-}
-
-.notes blockquote {
-  line-height: 1.5;
-  margin-left: 3em;
-}
-
-.element-invisible {
-  visibility: hidden;
-  display: block;
-  height: 0px;
-  width: 0px;
-  color: transparent;
-  line-height: 0px;
-}
-
-/* hide the fonts.com badge in case it shows up */
-#mti_wfs_colophon {
-display: none!important;
-}
-
-
-/* hide the sumome signup link */
-.sumome-scrollbox-link {
-  display: none!important;
-}
-
-
-
-.share_buttons_raw a,
-.share_buttons a,
-.post footer .share_buttons_raw a,
-.post footer .share_buttons a,
-.share_buttons_raw a:visited,
-.share_buttons a:visited,
-.post footer .share_buttons_raw a:visited,
-.post footer .share_buttons a:visited {
-  display: block;
-  padding: .7em 1em .7em 68px;
-  color: #f9f7f2;
-  font-family: 'AmericanTypwrterITCW01- 731031', Georgia, Times, "Times New Roman", serif;
-  background-image: url('http://static.tumblr.com/tf8wdpu/8PDnbli4v/share_new_2_.png');
-  background-color: #b83d65;
-  background-position: 0 -7px;
-  background-repeat: no-repeat;
-  margin-bottom: 0.75em;
-  font-size: 120%;
-  -webkit-border-radius: 7px;
-  -khtml-border-radius: 7px;
-  -moz-border-radius: 7px;
-  -o-border-radius: 7px;
-  border-radius: 7px;
-  text-shadow: 1px 1px 1px #7f2a45;
-  border: 1px solid #7f2a45;
-  max-width: 320px;
-  font-style: normal;
+<!DOCTYPE html>
+<!--
+
+Theme: WDM Travel journal - based on Ashley v0.6
+Author: More Onion - based on Jxnblk  [http://jxnblk.com]
+For: Tumblr  [http://tumblr.com/]
+Terms: Protected under Creative Commons. [http://creativecommons.org/licenses/by-nc/3.0/]
+
+-->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<!-- Custom Variables -->
+<meta name="image:Logo" content=""/>
+<meta name="text:Colophon" content="Travel Journal by WDM"/>
+<meta name="text:GoogleWebFont" content="Gentium Book Basic"/>
+<meta name="text:GoogleWebFontURL" content="Gentium+Book+Basic"/>
+<meta name="color:Background" content="#F9F7F2"/>
+<meta name="color:Text" content="#444"/>
+<meta name="color:Link" content="#09b"/>
+
+<link href="https://moreonion.github.io/travel-journal-wdm/images/wdm_favicon.ico" rel="shortcut icon" type="image/ico" />
+<link href="https://moreonion.github.io/travel-journal-wdm/images/wdm_favicon.ico" rel="icon" type="image/ico" />
+
+<!-- Open Graph meta tags -->
+<meta property="og:title" content="Justine Greenings\u0027 adventures" />
+<meta property="og:site_name" content="Justine Greenings\u0027 Travel Journal"/>
+<meta property="og:url" content="http://justine-greening.tumblr.com/" />
+<meta property="og:description" content="Development Secretary Justine Greening is going to New York representing the UK at the New Alliance meeting. This is her travel jorunal. />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="en_GB" />
+<meta property="article:author" content="http://www.wdm.org.uk" />
+<meta property="article:publisher" content="//www.facebook.com/worlddevelopmentmovement" />
+<meta property="og:image" content="//moreonion.github.io/travel-journal-wdm/FB_preview/FB_preview_first_action_big.jpg" />
+
+<!-- Twitter meta tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@wdmuk">
+<meta name="twitter:creator" content="@wdmuk">
+<meta name="twitter:url" content="http://justine-greening.tumblr.com/">
+<meta name="twitter:title" content="Follow Justine Greening\u0027 travel journal!">
+<meta name="twitter:description" content="Development Secretary Justine Greening is going to New York representing the UK at the New Alliance meeting. This is her travel jorunal.">
+<meta name="twitter:image:src" content="//moreonion.github.io/travel-journal-wdm/TW_preview/png/twitter_preivew.jpg" />
+
+
+<title>{Title}{block:PostSummary} &mdash; {PostSummary}{/block:PostSummary}</title>
+{block:Description}<meta name="description" content="{MetaDescription}">{/block:Description}
+<link rel="shortcut icon" href="{Favicon}">
+<link rel="apple-touch-icon" href="{PortraitURL-128}">
+<link rel="alternate" type="application/rss+xml" href="{RSS}">
+
+<link href="https://moreonion.github.io/travel-journal-wdm/tumblr/tumblr.css" rel="stylesheet" type="text/css">
+
+<!-- Fonts.com fonts loaded -->
+<script type="text/javascript" src="http://fast.fonts.net/jsapi/ee2f1f05-77cc-44f0-89f6-e11738a048de.js"></script>
+
+<!-- jquery 1.7 -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+
+<!-- loads hello bar -->
+<script type="text/javascript" src="//s3.amazonaws.com/scripts.hellobar.com/c7815d25b5d88660b29c28f09a9867180aafa25f.js"></script>
+
+<!-- google analytics tracking code -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-54425360-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+
+<!-- optimizely tracking code -->
+<script src="//cdn.optimizely.com/js/1886571607.js"></script>
+
+<!-- Share JS -->
+<script src="http://moreonion.github.io/travel-journal-wdm/javascripts/dynamic-share-links.js"></script>
+
+<!-- SumoMe script -->
+<script src="//load.sumome.com/" data-sumo-site-id="a3bbcb0de11b023d7222f81c82f7968ddbddb37058d3e1b87be5ff73853415c2" async></script>
+
+{block:IfGoogleWebFont}
+<link href='http://fonts.googleapis.com/css?family={text:GoogleWebFontURL}' rel='stylesheet' type='text/css'>
+{/block:IfGoogleWebFont}
+<meta name=viewport content='width=device-width, initial-scale=1'>
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<style>
+
+article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}audio,canvas,video{display:inline-block}audio:not([controls]){display:none;height:0}[hidden]{display:none}body,h1,h2,h3,h4,h5,h6,p,ul,ol,dl{margin:0;padding:0}a:focus{outline:thin dotted}a:active,a:hover{outline:0}b,strong{font-weight:bold}dfn{font-style:italic}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}mark{background:#ff0;color:#000}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em}q{quotes:"\201C" "\201D" "\2018" "\2019"}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:0}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:0.35em 0.625em 0.75em}legend{border:0;padding:0}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0}button,input{line-height:normal}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}textarea{overflow:auto;vertical-align:top}table{border-collapse:collapse;border-spacing:0}
+
+body {
+  color: {color:Text};
+  background: {color:Background} url('http://static.tumblr.com/tf8wdpu/pTgnbamew/paper_bg_bright.png') repeat top left;
+  font-family: Georgia, serif;
+  font-size: 120%;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+
+h1, h2, .h1, .h2 {
+  font-weight: 400;
+  line-height: 1.25;
+  margin-top: .5em;
+  font-family: 'AmericanTypwrterITCW01- 731010', Georgia, serif;
+}
+
+h1, .h1 {
+  font-size: 32px;
+}
+
+h2, .h2 {
+  font-size: 24px;
+}
+
+h3, .h3 {
+  font-size: 20px;
+}
+
+h1+h2 { margin-top: 0; }
+
+p, .p, ul, ol {
+  font-size: 18px;
+}
+
+small, .small {
+  font-size: 14px;
+}
+
+strong, .strong {
+  font-weight: 700;
+}
+
+p, ul, ol { margin-top: 1em; }
+
+@media screen and (min-width: 480px) {
+  h1, .h1 { font-size: 48px; }
+  h2, .h2 { font-size: 32px; }
+  h3, .h3 { font-size: 24px; }
+  p, .p, ul, ol { font-size: 20px;}
+  small, .small { font-size: 16px;}
+}
+
+@media screen and (min-width: 640px) {
+  h1, .h1 { font-size: 64px; }
+  h2, .h2 { font-size: 48px; } 
+  h3, .h3 { font-size: 32px; }
+}
+
+
+.wrap {
+  width: 90%;
+  padding: 0 5%;
+  max-width: 48em;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+article {
+  margin-top: 4em;
+  margin-bottom: 8em;
+  border-bottom: 1px solid #AFAAA1;
+  padding-bottom: 4em;
+}
+
+a {
+  color: {color:Link};
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+header {
+  width: 90%;
+  padding: 12em 5% 0;
+  max-width: 48em;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.logo {
+  float: left;
+  margin-right: 1em;
+  position: absolute;
+  top: 15px;
+  left: 0;
+}
+
+#envelope {
+float: right;
+clear: right;
+margin-bottom: -2em;
+
+}
+
+header h1, header p {
+  margin: 0;
+}
+
+header a, a.post-title {
+  color: {color:Text};
+}
+
+a.post-title:hover {
+  text-decoration: none;
+  color: {color:Link};
+}
+
+header a:hover {
+  text-decoration: none;
+}
+
+.post img,
+.photoset,
+.photoset img,
+.photoset_row {
+  max-width: 100%;
+  border: 5px solid #fff;
+}
+
+.post iframe, .video object {
+  width: 100%;
+  max-width: 100%;
+}
+
+.post blockquote {
+  padding-left: 1em;
+  border-left: 1px solid #ddd;
+}
+
+.post ul, .post ol {
+  margin-left: 2em;
+}
+
+.post footer ul, .post footer ol {
+  margin: 0;
+}
+
+.quote blockquote {
+  padding: 0;
+  border: none;
+  font-style: italic;
+}
+
+.quote .source {
+  text-align: right;
+}
+
+.post footer {
+  padding: 0;
+  margin-top: 1em;
+  color: #aaa;
+  font-style: italic;
+}
+
+.post footer a {
+  color: #6B6864;
+}
+
+
+.post footer a:hover {
+  color: #999;
+}
+
+.post footer .source {
+  float: right;
+  margin-right: 0;
+}
+
+.post footer ul li {
+  display: inline-block;
+  margin-right: 1em;
+}
+
+.tags {
+  margin-top: 1em;
+}
+
+.pagination {
+  margin-top: 4em;
+  text-align: center;
+  line-height: 3em;
+  overflow: hidden;
+}
+
+.pagination a {
+  display: block;
+  height: 3em;
+  padding: 0 1em;
+  border-radius: 0.25em;
+}
+
+.pagination a:hover {
+  background: #eee;
+  text-decoration: none;
+}
+
+.pagination .previous {
+  float: left;
+}
+
+.pagination .next {
+  float: right;
+}
+
+
+footer.wrap {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+ul.pages {
+  list-style: none;
+}
+
+ul.pages li {
+  display: inline-block;
+  margin-right: 1em;        
+}
+
+ul.pages li a {
+  display: block;
+  height: 3em;
+  line-height: 3em;
+}
+
+
+/* Permalink Notes */
+
+aside.notes {
+  margin-top: 4em;
+}
+
+ol.notes {
+  list-style: none;
+  margin-top: 1em;
+  border: 1px solid #ddd;
+  border-radius: 0.25em;
+}
+
+ol.notes, ol.notes a {
+  color: #aaa;
+}
+
+li.note {
+  display: block;
+  line-height: 2em;
+  padding: 0.5em 1em;
+  border-bottom: 1px solid #ddd;
+}
+li.note:last-child {
+  border: none;
+}
+
+ol.notes li.note img.avatar {
+  display: block;
+  float: left;
+  width: 2em;
+  height: 2em;
+  margin-right: 1em;
+  border-radius: 0.25em;
+}
+
+.notes .action a {
+  color: {color:Text};
+}
+
+.action {
+  display: block;
+  margin-left: 3em;
+}
+
+.notes blockquote {
+  line-height: 1.5;
+  margin-left: 3em;
+}
+
+.element-invisible {
+  visibility: hidden;
+  display: block;
+  height: 0px;
+  width: 0px;
+  color: transparent;
+  line-height: 0px;
+}
+
+/* hide the fonts.com badge in case it shows up */
+#mti_wfs_colophon {
+display: none!important;
+}
+
+
+/* hide the sumome signup link */
+.sumome-scrollbox-link {
+  display: none!important;
+}
+
+.share_buttons_raw, .share_buttons {
+  padding-top: 1.5em;
+}
+
+.share_buttons_raw a,
+.share_buttons a,
+.post footer .share_buttons_raw a,
+.post footer .share_buttons a,
+.share_buttons_raw a:visited,
+.share_buttons a:visited,
+.post footer .share_buttons_raw a:visited,
+.post footer .share_buttons a:visited {
+  display: block;
+  padding: .7em 1em .7em 68px;
+  color: #f9f7f2;
+  font-family: 'AmericanTypwrterITCW01- 731031', Georgia, Times, "Times New Roman", serif;
+  background-image: url('http://static.tumblr.com/tf8wdpu/8PDnbli4v/share_new_2_.png');
+  background-color: #b83d65;
+  background-position: 0 -7px;
+  background-repeat: no-repeat;
+  margin-bottom: 0.75em;
+  font-size: 90%;
+  -webkit-border-radius: 7px;
+  -khtml-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -o-border-radius: 7px;
+  border-radius: 7px;
+  text-shadow: 1px 1px 1px #7f2a45;
+  border: 1px solid #7f2a45;
+  max-width: 320px;
+  font-style: normal;
   
-}
+}
 
 
-.share_buttons_raw a.fb_share_link,
-.share_buttons a.fb_share_link,
-.post footer .share_buttons_raw a.fb_share_link,
-.post footer .share_buttons a.fb_share_link {
-  background-position: 0 -157px;
-  background-color: #3F5AA7;
-  text-shadow: 1px 1px 1px #2a3c6f;
-  border: 1px solid #2a3c6f;
-}
-.share_buttons_raw a.fb_share_link:hover,
-.share_buttons a.fb_share_link:hover,
-.post footer .share_buttons_raw a.fb_share_link:hover,
-.post footer .share_buttons a.fb_share_link:hover,
-.share_buttons_raw a.fb_share_link:focus,
-.share_buttons a.fb_share_link:focus,
-.post footer .share_buttons_raw a.fb_share_link:focus,
-.post footer .share_buttons a.fb_share_link:focus {
-  background-position: 0 -232px;
-  background-color: #4563B7;
-}
-.share_buttons_raw a.tw_share_link,
-.share_buttons a.tw_share_link,
-.post footer .share_buttons_raw a.tw_share_link,
-.post footer .share_buttons a.tw_share_link {
-  background-position: 0 -7;
-  background-color: #09BBEC;
-  text-shadow: 1px 1px 1px #0681a2;
-  border: 1px solid #0681a2;
-}
-.share_buttons_raw a.tw_share_link:hover,
-.share_buttons a.tw_share_link:hover,
-.post footer .share_buttons_raw a.tw_share_link:hover,
-.post footer .share_buttons a.tw_share_link:hover,
-.share_buttons_raw a.tw_share_link:focus,
-.share_buttons a.tw_share_link:focus,
-.post footer .share_buttons_raw a.tw_share_link:focus,
-.post footer .share_buttons a.tw_share_link:focus {
-  background-position: 0 -82px;
-  background-color: #26C7F3;
-}
-.share_buttons_raw a.email_share_link,
-.share_buttons a.email_share_link,
-.post footer .share_buttons_raw a.email_share_link,
-.post footer .share_buttons a.email_share_link,
-.share_buttons_raw a.email_signup_link,
-.share_buttons a.email_signup_link,
-.post footer .share_buttons_raw a.email_signup_link,
-.post footer .share_buttons a.email_signup_link {
-  background-position: 0 -307px;
-}
-.share_buttons_raw a.email_share_link:hover,
-.share_buttons a.email_share_link:hover,
-.post footer .share_buttons_raw a.email_share_link:hover,
-.post footer .share_buttons a.email_share_link:hover,
-.share_buttons_raw a.email_signup_link:hover,
-.share_buttons a.email_signup_link:hover,
-.post footer .share_buttons_raw a.email_signup_link:hover,
-.post footer .share_buttons a.email_signup_link:hover,
-.share_buttons_raw a.email_share_link:focus,
-.share_buttons a.email_share_link:focus,
-.post footer .share_buttons_raw a.email_share_link:focus,
-.post footer .share_buttons a.email_share_link:focus,
-.share_buttons_raw a.email_signup_link:focus,
-.share_buttons a.email_signup_link:focus,
-.post footer .share_buttons_raw a.email_signup_link:focus,
-.post footer .share_buttons a.email_signup_link:focus {
-  background-position: 0 -382px;
-  background-color: #c5416c;
-}
-.share_buttons_raw a:hover,
-.share_buttons a:hover,
-.post footer .share_buttons_raw a:hover,
-.post footer .share_buttons a:hover,
-.share_buttons_raw a:focus,
-.share_buttons a:focus,
-.post footer .share_buttons_raw a:focus,
-.post footer .share_buttons a:focus {
-  background-color: #c34b72;
-}
+.share_buttons_raw a.fb_share_link,
+.share_buttons a.fb_share_link,
+.post footer .share_buttons_raw a.fb_share_link,
+.post footer .share_buttons a.fb_share_link {
+  background-position: 0 -157px;
+  background-color: #3F5AA7;
+  text-shadow: 1px 1px 1px #2a3c6f;
+  border: 1px solid #2a3c6f;
+}
+.share_buttons_raw a.fb_share_link:hover,
+.share_buttons a.fb_share_link:hover,
+.post footer .share_buttons_raw a.fb_share_link:hover,
+.post footer .share_buttons a.fb_share_link:hover,
+.share_buttons_raw a.fb_share_link:focus,
+.share_buttons a.fb_share_link:focus,
+.post footer .share_buttons_raw a.fb_share_link:focus,
+.post footer .share_buttons a.fb_share_link:focus {
+  background-position: 0 -232px;
+  background-color: #4563B7;
+}
+.share_buttons_raw a.tw_share_link,
+.share_buttons a.tw_share_link,
+.post footer .share_buttons_raw a.tw_share_link,
+.post footer .share_buttons a.tw_share_link {
+  background-position: 0 -7;
+  background-color: #09BBEC;
+  text-shadow: 1px 1px 1px #0681a2;
+  border: 1px solid #0681a2;
+}
+.share_buttons_raw a.tw_share_link:hover,
+.share_buttons a.tw_share_link:hover,
+.post footer .share_buttons_raw a.tw_share_link:hover,
+.post footer .share_buttons a.tw_share_link:hover,
+.share_buttons_raw a.tw_share_link:focus,
+.share_buttons a.tw_share_link:focus,
+.post footer .share_buttons_raw a.tw_share_link:focus,
+.post footer .share_buttons a.tw_share_link:focus {
+  background-position: 0 -82px;
+  background-color: #26C7F3;
+}
+.share_buttons_raw a.email_share_link,
+.share_buttons a.email_share_link,
+.post footer .share_buttons_raw a.email_share_link,
+.post footer .share_buttons a.email_share_link,
+.share_buttons_raw a.email_signup_link,
+.share_buttons a.email_signup_link,
+.post footer .share_buttons_raw a.email_signup_link,
+.post footer .share_buttons a.email_signup_link {
+  background-position: 0 -307px;
+}
+.share_buttons_raw a.email_share_link:hover,
+.share_buttons a.email_share_link:hover,
+.post footer .share_buttons_raw a.email_share_link:hover,
+.post footer .share_buttons a.email_share_link:hover,
+.share_buttons_raw a.email_signup_link:hover,
+.share_buttons a.email_signup_link:hover,
+.post footer .share_buttons_raw a.email_signup_link:hover,
+.post footer .share_buttons a.email_signup_link:hover,
+.share_buttons_raw a.email_share_link:focus,
+.share_buttons a.email_share_link:focus,
+.post footer .share_buttons_raw a.email_share_link:focus,
+.post footer .share_buttons a.email_share_link:focus,
+.share_buttons_raw a.email_signup_link:focus,
+.share_buttons a.email_signup_link:focus,
+.post footer .share_buttons_raw a.email_signup_link:focus,
+.post footer .share_buttons a.email_signup_link:focus {
+  background-position: 0 -382px;
+  background-color: #c5416c;
+}
+.share_buttons_raw a:hover,
+.share_buttons a:hover,
+.post footer .share_buttons_raw a:hover,
+.post footer .share_buttons a:hover,
+.share_buttons_raw a:focus,
+.share_buttons a:focus,
+.post footer .share_buttons_raw a:focus,
+.post footer .share_buttons a:focus {
+  background-color: #c34b72;
+}
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 900px) {
   
-  .share_buttons_raw a,
-  .share_buttons a,
-  .post footer .share_buttons_raw a,
-  .post footer .share_buttons a,
-  .share_buttons_raw a:visited,
-  .share_buttons a:visited,
-  .post footer .share_buttons_raw a:visited,
-  .post footer .share_buttons a:visited {
-    width: 35%;
-    float: left;
-    margin-right: 4%;
-  }
-}
+  .share_buttons_raw a,
+  .share_buttons a,
+  .post footer .share_buttons_raw a,
+  .post footer .share_buttons a,
+  .share_buttons_raw a:visited,
+  .share_buttons a:visited,
+  .post footer .share_buttons_raw a:visited,
+  .post footer .share_buttons a:visited {
+    width: 35%;
+    float: left;
+    margin-right: 0;
+  }
+  
+  .post footer a.fb_share_link {
+    margin-right: 4%;
+  }
+  
+}
 
-@media screen and (min-width: 700px) {
-  .post footer .share_buttons_raw a.email_signup_link,
-  .post footer .share_buttons a.email_signup_link {
-    margin-left: auto;
-    margin-right: auto;
-    clear: both;
-    float: none;
+@media screen and (min-width: 900px) {
+  .post footer .share_buttons_raw a.email_signup_link,
+  .post footer .share_buttons a.email_signup_link {
+    margin-left: auto;
+    margin-right: auto;
+    clear: both;
+    float: none;
     
-  }
-}      
-
-{CustomCSS}
-
-</style>
-</head>
-<body>
-
-<header>
-<a href="/"><img src="http://static.tumblr.com/tf8wdpu/WC5nbame8/travel_journal_tag.png" class="logo" /></a>
-<h1 class="element-invisible"><a href="/">{Title}</a></h1>
-{block:Description}
-<p>{Description}</p>
-{/block:Description}
-</header>
-
-<div class="content wrap">
-<section class="posts">
-{block:NoSearchResults}
-<h2>Sorry, nothing found for &ldquo;{SearchQuery}&rdquo;.</h2>
-{/block:NoSearchResults}
-
-{block:TagPage}
-<h2 class="h1">#{Tag}</h2>
-{/block:TagPage}
-
-{block:Posts}
-<article class="post {PostType}">
-{block:Text}
-{block:Title}
-<a href="{Permalink}" class="post-title"><h2>{Title}</h2></a>
-{/block:Title}
-
-{Body}
-
-{block:More}<a href="{Permalink}" class="p">Read More &raquo;</a>{/block:More}
-
-{/block:Text}
-
-{block:Photo}
-{LinkOpenTag}
-<img src="{PhotoURL-HighRes}" alt="{PhotoAlt}">           
-{LinkCloseTag}
-
-{block:Caption}
-{Caption}
-{/block:Caption}
-{/block:Photo}
-
-{block:Photoset}
-{Photoset}
-
-{block:Caption}
-{Caption}
-{/block:Caption}
-{/block:Photoset}
-
-{block:Quote}
-<blockquote>
-<p class="h3">&ldquo;{Quote}&rdquo;</p>
-
-{block:Source}
-<p class="source">&ndash; {Source}</p>
-{/block:Source}
-</blockquote>
-{/block:Quote}
-
-{block:Link}
-<h2><a href="{URL}"{Target}>{Name} &raquo;</a></h2>
-
-{block:Description}
-{Description}
-{/block:Description}
-{/block:Link}
-
-{block:Chat}
-{block:Title}
-<h2>{Title}</h2>
-{/block:Title}
-
-<ul>
-{block:Lines}
-<li class="{Alt}">
-{block:Label}
-<b>{Label}</b>
-{/block:Label}
-
-{Line}
-</li>
-{/block:Lines}
-</ul>
-{/block:Chat}
-
-{block:Audio}
-
-{AudioEmbed-640}
-
-{block:Caption}
-{Caption}
-{/block:Caption}
-{/block:Audio}
-
-{block:Video}
-{Video-700}
-
-{block:Caption}
-{Caption}
-{/block:Caption}
-{/block:Video}
-
-{block:Answer}
-<h2>{Asker} asked: <q>{Question}</q></h2>
-
-{Answer}
-{/block:Answer}
-
-{block:Date}
-<footer>
-<ul class="small">
-<li><a href="{Permalink}" title="{DayOfWeek}, {DayOfMonth} {Month} {Year}, {24Hour}:{Minutes}:{Seconds}">{TimeAgo}</a>a</li>
-{block:RebloggedFrom}<li class="source"> (reblogged from <a href="{ReblogParentURL}">{ReblogParentName}</a>)</li>{/block:RebloggedFrom}
-{block:ContentSource}
-<li class="source">via <a href="{SourceURL}">{SourceTitle}</a></li>
-{/block:ContentSource}
-</ul>
-<div class="share_buttons clearfix">
-<a rel="nofollow" href="http://www.facebook.com/sharer.php?u=<;url>" target="_blank" class="fb_share_link">Share on Facebook</a>
-<a rel="nofollow" href="http://www.twitter.com/share?url=<;url>" target="_blank" class="tw_share_link">Share on Facebook</a>
-<a rel="nofollow" class="email_signup_link" href="//justine-greening.tumblr.com/sign-up" title="Sign up via email">Sign up via Email</a>
-</div>
+  }
+}      
 
 
-{block:PermalinkPage}
-{block:HasTags}
-<ul class="tags">
-{block:Tags}
-<li>
-<a href="{TagURL}">#{Tag}</a>
-</li>
-{/block:Tags}
-</ul>
-{/block:HasTags}      
-{/block:PermalinkPage}
+@media screen and (min-width: 1046px) {
+  .post footer a.fb_share_link {
+    margin-right: 4%;
+    margin-left: 4%;
+  }
+}
 
-</footer>
-{/block:Date}
-</article> <!-- /post -->     
+{CustomCSS}
 
-{block:PostNotes}
-<aside class="notes">
-{block:NoteCount}<p>{NoteCountWithLabel}</p>{/block:NoteCount}
-{PostNotes-64}
-</aside>
-{/block:PostNotes}
+</style>
+</head>
+<body>
 
-{/block:Posts}
+<header>
+<a href="/"><img src="http://static.tumblr.com/tf8wdpu/WC5nbame8/travel_journal_tag.png" class="logo" /></a>
+<h1 class="element-invisible"><a href="/">{Title}</a></h1>
+{block:Description}
+<p>{Description}</p>
+{/block:Description}
+</header>
 
-{block:Pagination}
-<div class="pagination p">
-<span class="previous">{block:PreviousPage}<a href="{PreviousPage}" class="previous">{/block:PreviousPage}&laquo; Previous{block:PreviousPage}</a>{/block:PreviousPage}</span>
-<span class="page-numbers">{CurrentPage}/{TotalPages}</span>
-<span class="next">{block:NextPage}<a href="{NextPage}">{/block:NextPage}Next &raquo;{block:NextPage}</a>{/block:NextPage}</span>
-</div>
-{/block:Pagination}
+<div class="content wrap">
+<section class="posts">
+{block:NoSearchResults}
+<h2>Sorry, nothing found for &ldquo;{SearchQuery}&rdquo;.</h2>
+{/block:NoSearchResults}
 
-</section> <!-- /posts -->
-</div> <!-- /content -->
+{block:TagPage}
+<h2 class="h1">#{Tag}</h2>
+{/block:TagPage}
 
-<footer class="small wrap">
-{block:HasPages}
-<ul class="pages">
-{block:Pages}
-<li><a href="{URL}">{Label}</a></li>
-{/block:Pages}
-</ul>
-{/block:HasPages}
-{block:AskEnabled}<a href="/ask">{AskLabel}</a>{/block:AskEnabled}
+{block:Posts}
+<article class="post {PostType}">
+{block:Text}
+{block:Title}
+<a href="{Permalink}" class="post-title"><h2>{Title}</h2></a>
+{/block:Title}
+
+{Body}
+
+{block:More}<a href="{Permalink}" class="p">Read More &raquo;</a>{/block:More}
+
+{/block:Text}
+
+{block:Photo}
+{LinkOpenTag}
+<img src="{PhotoURL-HighRes}" alt="{PhotoAlt}">           
+{LinkCloseTag}
+
+{block:Caption}
+{Caption}
+{/block:Caption}
+{/block:Photo}
+
+{block:Photoset}
+{Photoset}
+
+{block:Caption}
+{Caption}
+{/block:Caption}
+{/block:Photoset}
+
+{block:Quote}
+<blockquote>
+<p class="h3">&ldquo;{Quote}&rdquo;</p>
+
+{block:Source}
+<p class="source">&ndash; {Source}</p>
+{/block:Source}
+</blockquote>
+{/block:Quote}
+
+{block:Link}
+<h2><a href="{URL}"{Target}>{Name} &raquo;</a></h2>
+
+{block:Description}
+{Description}
+{/block:Description}
+{/block:Link}
+
+{block:Chat}
+{block:Title}
+<h2>{Title}</h2>
+{/block:Title}
+
+<ul>
+{block:Lines}
+<li class="{Alt}">
+{block:Label}
+<b>{Label}</b>
+{/block:Label}
+
+{Line}
+</li>
+{/block:Lines}
+</ul>
+{/block:Chat}
+
+{block:Audio}
+
+{AudioEmbed-640}
+
+{block:Caption}
+{Caption}
+{/block:Caption}
+{/block:Audio}
+
+{block:Video}
+{Video-700}
+
+{block:Caption}
+{Caption}
+{/block:Caption}
+{/block:Video}
+
+{block:Answer}
+<h2>{Asker} asked: <q>{Question}</q></h2>
+
+{Answer}
+{/block:Answer}
+
+{block:Date}
+<footer>
+<ul class="small">
+<li><a href="{Permalink}" title="{DayOfWeek}, {DayOfMonth} {Month} {Year}, {24Hour}:{Minutes}:{Seconds}">{TimeAgo}</a>a</li>
+{block:RebloggedFrom}<li class="source"> (reblogged from <a href="{ReblogParentURL}">{ReblogParentName}</a>)</li>{/block:RebloggedFrom}
+{block:ContentSource}
+<li class="source">via <a href="{SourceURL}">{SourceTitle}</a></li>
+{/block:ContentSource}
+</ul>
+<div class="share_buttons clearfix">
+<a rel="nofollow" href="http://www.facebook.com/sharer.php?u=<;url>" target="_blank" class="fb_share_link">Share on Facebook</a>
+<a rel="nofollow" href="http://www.twitter.com/share?url=<;url>" target="_blank" class="tw_share_link">Share on Facebook</a>
+<a rel="nofollow" class="email_signup_link" href="//justine-greening.tumblr.com/sign-up" title="Sign up via email">Sign up via Email</a>
+</div>
 
 
-<img src="http://static.tumblr.com/tf8wdpu/UJunbldu8/letter_logo_bottom_right.png" id="envelope" title="Wold Development Movement" alt="World Development Movement Logo on an envelope" />
-</footer>
-</body>
-</html>
+{block:PermalinkPage}
+{block:HasTags}
+<ul class="tags">
+{block:Tags}
+<li>
+<a href="{TagURL}">#{Tag}</a>
+</li>
+{/block:Tags}
+</ul>
+{/block:HasTags}      
+{/block:PermalinkPage}
+
+</footer>
+{/block:Date}
+</article> <!-- /post -->     
+
+{block:PostNotes}
+<aside class="notes">
+{block:NoteCount}<p>{NoteCountWithLabel}</p>{/block:NoteCount}
+{PostNotes-64}
+</aside>
+{/block:PostNotes}
+
+{/block:Posts}
+
+{block:Pagination}
+<div class="pagination p">
+<span class="previous">{block:PreviousPage}<a href="{PreviousPage}" class="previous">{/block:PreviousPage}&laquo; Previous{block:PreviousPage}</a>{/block:PreviousPage}</span>
+<span class="page-numbers">{CurrentPage}/{TotalPages}</span>
+<span class="next">{block:NextPage}<a href="{NextPage}">{/block:NextPage}Next &raquo;{block:NextPage}</a>{/block:NextPage}</span>
+</div>
+{/block:Pagination}
+
+</section> <!-- /posts -->
+</div> <!-- /content -->
+
+<footer class="small wrap">
+{block:HasPages}
+<ul class="pages">
+{block:Pages}
+<li><a href="{URL}">{Label}</a></li>
+{/block:Pages}
+</ul>
+{/block:HasPages}
+{block:AskEnabled}<a href="/ask">{AskLabel}</a>{/block:AskEnabled}
+
+
+<img src="http://static.tumblr.com/tf8wdpu/UJunbldu8/letter_logo_bottom_right.png" id="envelope" title="Wold Development Movement" alt="World Development Movement Logo on an envelope" />
+</footer>
+</body>
+</html>
 
 
 

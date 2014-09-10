@@ -511,7 +511,7 @@ td {
   background-position: 0 -7px;
   background-repeat: no-repeat;
   margin-bottom: 0.75em;
-  font-size: 120%;
+  font-size: 80%;
   -webkit-border-radius: 7px;
   -khtml-border-radius: 7px;
   -moz-border-radius: 7px;
@@ -600,4 +600,12 @@ td {
 .post footer .share_buttons_raw a:focus,
 .post footer .share_buttons a:focus {
   background-color: #c34b72;
+}
+/* sumome popup boxes */
+.sumome-scrollbox-content .sumome-scrollbox-form h2 {
+  font-family: 'AmericanTypwrterITCW01- 731010', Georgia, serif;
+}
+.sumome-scrollbox-content .sumome-scrollbox-form button {
+  font-family: 'AmericanTypwrterITCW01- 731010', Georgia, serif;
+  text-transform: none;
 }
