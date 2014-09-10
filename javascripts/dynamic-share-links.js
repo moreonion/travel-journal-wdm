@@ -16,9 +16,11 @@ $(document).ready(function() {
         }
 
         $(buttons).find('a').each(function(i, link) {
-            var dest = share_links[link.className]
-                .replace(/{{url}}/, encodeURIComponent(url));
-            $(link).attr('href', dest);
+            if (share_links[link.className] !== '') {
+                var dest = share_links[link.className]
+                    .replace(/{{url}}/, encodeURIComponent(url));
+                $(link).attr('href', dest);
+            }
             $(link).on('click', function(ev) {
                 ga('send', 'event', 'share',
                    ev.target.className, ev.target.href);
