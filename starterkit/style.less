@@ -949,7 +949,7 @@ label,
     background-position: 0 -7px;
     background-repeat: no-repeat;
     margin-bottom: @oneline/2;
-    font-size: 120%;
+    font-size: 100%;
     .rounded(7px);
     text-shadow: 1px 1px 1px darken(@primary_color,15%);
     border: 1px solid darken(@primary_color,15%);
@@ -994,6 +994,15 @@ label,
   }
 }
 
+@media @tablet {
+  .share_buttons_raw, .share_buttons {
+    
+    a, a:visited {
+      font-size: 120%;
+      
+    }
+  }
+}
 
 
 /* ==================================================================
