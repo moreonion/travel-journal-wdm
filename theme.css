@@ -3354,7 +3354,8 @@ textarea,
   font-size: 100%;
   min-height: 400px;
 }
-#MORE_ONION_action_1_message_signoff_ {
+#MORE_ONION_action_1_message_signoff_,
+.eaMessageSignoff {
   display: none;
 }
 /* ---------- checkbox & radio -------------------------------------- */
