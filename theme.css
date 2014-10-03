@@ -3250,7 +3250,8 @@ br[clear="all"] {
   #MORE_ONION_Monsanto_thank_you_background_imageDiv,
   #MORE_ONION_Coca-Cola_background_imageDiv,
   #MORE_ONION_Coca-Cola_thank_you_background_imageDiv,
-  #MORE_ONION_Coca-Cola_share_email_background_imageDiv #MORE_ONION_Monsanto_share_email_background_imageDiv {
+  #MORE_ONION_Coca-Cola_share_email_background_imageDiv,
+  #MORE_ONION_Monsanto_share_email_background_imageDiv {
     display: block;
   }
   .eaRightColumnContent {
