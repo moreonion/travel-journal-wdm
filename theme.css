@@ -3316,6 +3316,9 @@ input.eaResetButton,
 .eaResetButton {
   display: none;
 }
+.eaFriendFormTextfield {
+  margin-bottom: 0.75em;
+}
 /* ---------- text input -------------------------------------------- */
 input[type="text"],
 input[type="email"],
