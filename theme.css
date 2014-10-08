@@ -3255,7 +3255,8 @@ br[clear="all"] {
   #MORE_ONION_Diageo_background_imageDiv,
   #MORE_ONION_Diageo_thank_you_background_imageDiv,
   #MORE_ONION_World_Bank_background_imageDiv,
-  #MORE_ONION_World_Bank_thank_you_imageDiv {
+  #MORE_ONION_World_Bank_thank_you_imageDiv,
+  #MORE_ONION_World_Bank_share_email_imageDiv {
     display: block;
   }
   .eaRightColumnContent {
