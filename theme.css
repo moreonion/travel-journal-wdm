@@ -3260,7 +3260,10 @@ br[clear="all"] {
   #MORE_ONION_Ghana_background_imageDiv,
   #MORE_ONION_Ghana_share_email_imageDiv,
   #MORE_ONION_Ghana_background_image_page_2Div,
-  #MORE_ONION_Ghana_thank_you_imageDiv {
+  #MORE_ONION_Ghana_thank_you_imageDiv,
+  #MORE_ONION_TTIP_thank_you_imageDiv,
+  #MORE_ONION_TTIP_background_imageDiv,
+  #MORE_ONION_TTIP_share_email_imageDiv {
     display: block;
   }
   .eaRightColumnContent {
