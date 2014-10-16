@@ -3596,9 +3596,9 @@ label,
 /* contact name container */
 .eaContactNameContainer {
   float: left;
-  font-size: 1.5625em;
-  line-height: 1.92em;
-  margin-bottom: 0.96em;
+  font-size: 1.25em;
+  line-height: 1.2em;
+  margin-bottom: 1.2em;
   position: relative;
   clear: left;
   color: #b83d65;
