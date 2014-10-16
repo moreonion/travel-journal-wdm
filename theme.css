@@ -3585,12 +3585,17 @@ label,
 /* select contact instruction text */
 /* container for contacts */
 .eaContactsContainer {
+  font-size: 1.5625em;
+  line-height: 1.92em;
+  margin-bottom: 0.96em;
   float: left;
   width: 95%;
   position: relative;
   padding: 10px;
   background-color: #f9f7f2;
   margin-top: 10px;
+  color: #b83d65;
+  font-family: 'AmericanTypwrterITCW01- 731010', Georgia, Times, "Times New Roman", serif;
 }
 /* contact name container */
 .eaContactNameContainer {
