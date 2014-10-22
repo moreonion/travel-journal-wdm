@@ -3579,7 +3579,7 @@ label,
   list-style-type: none;
 }
 #eaerrors {
-  display: none;
+  padding: 0.5em;
 }
 /* ==================================================================
  * contact lists
