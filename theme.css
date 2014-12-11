@@ -3268,7 +3268,9 @@ br[clear="all"] {
   #MORE_ONION_Unilever_thank_you_background_imageDiv,
   #MORE_ONION_Unilever_share_email_background_imageDiv,
   #MORE_ONION_Diageo_share_email_background_imageDiv,
-  #MORE_ONION_Diageo_share_email_background_image_thank_youDiv {
+  #MORE_ONION_Diageo_share_email_background_image_thank_youDiv,
+  #MORE_ONION_TTIP_background_imageDiv,
+  #MORE_ONION_TTIP_background_image_p2Div {
     display: block;
   }
   .eaRightColumnContent {
